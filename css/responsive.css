@@ -1,0 +1,286 @@
+@charset "utf-8";
+	/**
+		* Description: CSS
+		* Version: 1.0.0
+		* Last update: 2017/08/20
+		* Author: Duc PM <minhducpham.it@gmail.com> - ducpm.com
+		*
+	    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+	    Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
+		* Summary:
+		*
+			*	Styles for devices max 1200px
+			*	Styles for devices max 1200px
+			*	Styles for devices max 1024px
+			*	Styles for devices max 800px
+			*	Styles for devices min 768px
+			*	Styles for devices max 767px
+			*	Styles for devices max 667px
+			*	Styles for devices max 568px
+			*	Styles for devices max 480px
+			*	Styles for devices max 414px
+			*	Styles for devices max 320px
+	*/
+
+/*----------------
+[Styles for devices min 1200px
+*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+  .sticky-wrapper.is-sticky .fixed-res {
+  	top: 55px !important;
+  }
+}
+
+
+/*----------------
+[Styles for devices max 1024px
+*/
+@media (max-width: 1024px) {
+  .box-module .box-title .title {
+  	font-size: 12px;
+  }
+  .sticky-wrapper.is-sticky .fixed-res {
+  	top: 55px !important;
+  }
+}
+
+/*----------------
+[Styles for devices max 800px
+*/
+@media (max-width: 800px) {
+  .main-content {
+  	width: 100%;
+  	left: 0;
+  	margin-bottom: 30px;
+  }
+  .left-sidebar {
+  	width: 100%;
+  	right: 0;
+  }
+}
+
+/*----------------
+[Styles for devices min 768px
+*/
+@media (min-width: 768px) {
+	.modal-dialog {
+		margin: 60px auto;
+	}
+}
+
+/*----------------
+[Styles for devices max 767px
+*/
+@media (max-width: 767px) {
+  .block-logo {
+  	width: 20%;
+  }
+  .block-logo2 {
+  	width: 80%;
+  }
+  .header-top .block-lang-phone {
+  	width: 100%;
+  	text-align: center;
+  }
+  .block-lang-phone .language ul {
+	  text-align: center;
+	  margin-top: 20px;
+	}
+	.block-lang-phone .phone {
+		margin-top: 10px;
+	}
+	.widget {
+		margin-bottom: 20px;
+	}
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+	.modal-dialog {
+		margin: 20px;
+	}
+	.btn-reservation {
+		top: 40%;
+	}
+}
+
+/*----------------
+[Styles for devices max 667px
+*/
+@media (max-width: 667px) {
+	.block-lang-phone .language ul {
+		margin-top: 10px;
+	}
+	.block-lang-phone .phone {
+		margin-bottom: 0;
+	}
+}
+
+/*----------------
+[Styles for devices max 568px
+*/
+@media (max-width: 568px) {
+	.header-top .block-logo img {
+		width: 70px;
+	}
+	.header-top .block-logo2 img {
+		width: 200px;
+		margin-top: 10px;
+	}
+	.block-logo {
+  	width: 100%;
+  }
+  .block-logo2 {
+  	width: 100%;
+  }
+ 	.block-logo img,
+  .block-logo2 img {
+  	margin: 0 auto;
+  }
+	.block-product .block-content {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.block-product .item {
+		float: left;
+		width: 50%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.block-product .item .item-cotent {
+		margin-bottom: 0;
+	}
+	.block-product .item .image {
+	  float: left;
+	  width: 100%;
+	  margin-right: 0;
+	}
+	.block-product .item .description {
+		float: left;
+		width: calc(100% - 0px);
+		text-align: center;
+	}
+	.block-product .item .description .info {
+	  padding-right: 0;
+	  text-align: left;
+	}
+	.block-product .btn {
+		position: relative;
+		right: 0;
+		bottom: 0;
+		margin-top: 10px;
+	}
+	.block-services .list-services .item {
+		text-align: center;
+	}
+	.block-services .list-services .item .icon {
+		display: block;
+	}
+	.block-services .list-services .item .icon img {
+		margin: 0 auto;
+	}
+	.block-services .list-services .item .name {
+		height: 36px;
+		overflow: hidden;
+	}
+	.btn-reservation {
+	    top: 40%;
+	}
+}
+
+/*----------------
+[Styles for devices max 480px
+*/
+@media (max-width: 480px) {
+	.block-product .item {
+	  width: 100%;
+	}
+	.block-product .item .image img {
+		width: 100%;
+	}
+}
+
+/*----------------
+[Styles for devices max 414px
+*/
+@media (max-width: 414px) {
+	.menu .container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.menu .nav-menu>li {
+	  float: left;
+	  position: relative;
+	  display: block;
+	  width: calc(100% / 2);
+	}
+	.block-check-info .box-input {
+		text-align: center;
+	}
+	.block-check-info .box-input p strong {
+		display: block;
+	}
+	.block-cus-info .check-list .item input[type='text'] {
+	 	max-width: -webkit-fill-available;
+	 	margin-left: 25px;
+	}
+	.block-cus-info .group-btn {
+		text-align: center; 
+	}
+	.block-cus-info .group-btn .btn-book,
+	.block-cus-info .group-btn .btn-cancel {
+		width: 110px;
+		padding: 8px 12px;
+	}
+	.btn-reservation {
+	    top: 50%;
+	}
+	.sticky-wrapper.is-sticky .fixed-res {
+	  	top: 105px !important;
+  	}
+}
+
+/*----------------
+[Styles for devices max 375px
+*/
+@media (max-width: 375px) {
+	.btn-reservation {
+	    top: 50%;
+	}
+}
+
+/*----------------
+[Styles for devices max 320px
+*/
+@media (max-width: 320px) {
+	.block-nearby .item {
+		text-align: center;
+	}
+	.block-nearby .item .image {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.block-nearby .item .image img {
+		width: 100%;
+	}
+	.block-nearby .item .description {
+  		float: left;
+ 		width: calc(100% - 0px);
+	}
+	.block-cus-info input[type='radio'] {
+		margin-right: 5px;
+	}
+	.block-cus-info .check-list .item label {
+		margin-left: 5px;
+	}
+	.modal {
+		padding-right: 0;
+	}
+	.btn-reservation {
+	    top: 60%;
+	}
+}
