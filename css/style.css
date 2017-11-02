@@ -167,7 +167,18 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f178";
 }
 
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Wrapper */
 
 
-
+/* Header */
+.header {
+  background: #fff;
+}
+.top-header {
+  background: #f6f6f6;
+}
