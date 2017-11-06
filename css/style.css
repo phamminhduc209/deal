@@ -251,6 +251,90 @@ form.form--general {
   margin-bottom: 10px;
 }
 
+.header__main {
+  background-color: #ffffff;
+}
+.logo-wrapper {
+  padding: 20px 10px;
+}
+
+.search-area {
+  padding: 18px 30px 10px;
+}
+.search-box {
+  position: relative;
+  height: 40px;
+  border: 2px solid #d3d3d3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.search-box__category {
+  float: left;
+  width: 160px;
+  border-right: 1px solid #d2d2d2;
+}
+.search-box__input {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 160px;
+  padding: 3px 3px;
+}
+.select2-container--default .select2-selection--single {
+  background-color: transparent; 
+  border: none; 
+  border-radius: 0; 
+}
+.select2-container--default .select2-selection--single:focus {
+  outline: none;
+}
+.select2-container .select2-selection--single {
+  height: 37px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 37px;
+  width: 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 5px;
+  right: 5px;
+}
+.search-box__input input[type="text"] {
+  width: 100%;
+  padding-right: 60px;
+  box-shadow: none;
+  outline: none;
+}
+.search-box input[type="text"], .search-box .btn {
+  border: 0;
+}
+.search-box__input input.input-search {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-color: transparent;
+  box-shadow: none;
+  opacity: 1;
+  background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+}
+.search-box__input .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
 
 
 #home-slider {

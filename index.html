@@ -105,7 +105,50 @@
 					</nav>
 				</div>
 			</div>
-		</div>
+		</div><!-- /.header -->
+		<div class="header__main  clearfix">
+			<div class="container">
+				<div class="row">
+					<a class="toggle-nav visible-xs visible-sm" data-target="#hd-container" data-effect="hd-effect-4">
+						<i class="fa fa-bars"></i>
+					</a><!-- /.toggle-nav -->
+					<a class="toggle-search visible-xs visible-sm" data-target="#main-search">
+						<i class="fa fa-search"></i>
+					</a><!-- /.toggle-search -->
+					<div class="logo-wrapper col-md-4">
+					    <a href="#" title="">
+					        <img src="images/logo.png" alt="">
+					    </a>
+					</div><!-- /.logo-wrapper -->
+					<div class="search-area col-md-6" id="main-search">
+						<form action="/tim-kiem" method="get" class="">
+							<div class="search-box form-inline clearfix">
+								<div class="search-box__category">
+									<select name="" class="select2">
+										<option value="0">Tất cả danh mục</option>
+									    <option value="557">- Ẩm thực</option>
+									    <option value="579">- Spa &amp; Làm đẹp</option>
+									    <option value="555">- Giải trí</option>
+									    <option value="581">- Du Lịch</option>
+									    <option value="571">- Sản Phẩm</option>
+									    <option value="593">- Thời Trang &amp; Phụ Kiện</option>
+									</select>
+								</div>
+								<div class="search-box__input">
+									<span class="twitter-typeahead">
+										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
+									</span>
+									<button class="btn btn-danger">
+	                                    <i class="fa fa-search"></i>
+	                                    <span class="sr-only">Tìm kiếm</span>
+	                                </button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.header__main -->
 	</header><!-- /.header -->
 
 	<div id="home-slider">

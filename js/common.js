@@ -88,7 +88,7 @@
   /*
    * 3. select2
   */
-  $('select2').select2();
+  $('.select2').select2();
 
   /**==============================
     ***  Auto width megamenu
