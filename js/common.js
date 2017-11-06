@@ -68,17 +68,17 @@
     }, 'slow');
   });
 
-  // $(window).scroll(function(){
-  //   var h = $(window).scrollTop();
-  //   var width = $(window).width();
-  //   if(width > 767){
-  //     if(h > 35){
-  //       $('#main-header').addClass('main-header-ontop');
-  //     }else{
-  //       $('#main-header').removeClass('main-header-ontop');
-  //     }
-  //   }
-  // });
+  $(window).scroll(function(){
+    var h = $(window).scrollTop();
+    var width = $(window).width();
+    if(width > 767){
+      if(h > 35){
+        $('#main-header').addClass('main-header-ontop');
+      }else{
+        $('#main-header').removeClass('main-header-ontop');
+      }
+    }
+  });
 
   /*
    * 2. Sticky Menu
