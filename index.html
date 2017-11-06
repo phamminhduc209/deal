@@ -38,7 +38,7 @@
 				<div class="row">
 					<nav class="top-bar__item top-bar__item--nav navigation navigation--inline pull-right">
 						<ul id="user_info_header" class="navbar-right">
-							<li><i class="hd hd-user"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li><i class="fa fa-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
 							<li>&nbsp; | &nbsp;</li>
 							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
 								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
@@ -58,6 +58,23 @@
 								        				
 								        			</i>
 								        		</div>
+								        		<div class="form-group has-feedback has-error fv-has-tooltip">
+												    <div class="input-group">
+												        <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+												        <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu" autocomplete="off">
+												    </div>
+												    <i class="form-control-feedback fv-icon-no-label fv-bootstrap-icon-input-group glyphicon glyphicon-remove" data-fv-icon-for="password" style="cursor: pointer; pointer-events: auto;" data-original-title="" title=""></i>
+												    <small class="help-block">Vui lòng nhập mật khẩu</small>
+												    <small class="help-block">Mật khẩu phải từ 1 đến 64 kí tự</small>
+												</div>
+												<div class="form-group password-helper">
+												    <label for="remember_me" class="pull-left remember-me"><input type="checkbox" name="remember_me" id="remember_me" value="Y" checked="checked"> Ghi nhớ đăng nhập</label>
+												    <a class="pull-right" rel="nofollow" href="">Quên mật khẩu?</a>
+												</div>
+												<div class="form-group" style="margin-bottom: 0;">
+												    <button type="submit" class="btn btn-success btn-block disabled" disabled="disabled">ÐĂNG NHẬP</button>
+												    <p class="login-register-helper">Bạn chưa có tài khoản? <a rel="nofollow" href="#">Ðăng ký ngay</a></p>
+												</div>
 								        	</form>
 								        </div>
 								        <div class="modal-footer">
@@ -74,6 +91,17 @@
 								</ul>
 							</li>
 						</ul>
+					</nav>
+					<nav class="top-bar__item top-bar__item--nav navigation navigation--inline pull-right" style="border-right: 1px solid #fff;">
+					    <ul id="user_support" class="navbar-right">
+					        <li><a href="callto:19006760">
+					            <i class="fa fa-phone"></i> Hotline:&nbsp;<span class="hotline__number">1900 6760</span>                            </a>
+					        </li>
+					        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					        <li>
+					            <a href="javascript:void($zopim.livechat.window.show())"><i class="fa fa-question-circle"></i> Hỗ trợ trực tuyến</a>
+					        </li>
+					    </ul>
 					</nav>
 				</div>
 			</div>

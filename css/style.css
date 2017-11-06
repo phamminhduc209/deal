@@ -198,6 +198,59 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Header */
+.header {
+  position: relative;
+  z-index: 9;
+}
+.top-bar {
+  height: 35px;
+  background-color: #f4f4f4;
+}
+.top-bar__item {
+  height: 35px;
+  line-height: 27px;
+  padding: 0 17px;
+  border-left: 1px solid #dddddd;
+}
+.navigation ul, .navigation li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation--inline> ul> li {
+  display: inline-block;
+}
+.top-bar__item--nav a {
+  line-height: 35px;
+}
+.top-bar a {
+  color: #444444;
+  font-size: 13px;
+}
+.login-popup {
+  margin-top: 10px !important;
+  width: 350px;
+}
+.modal-header {
+  padding: 20px;
+  position: relative;
+  height: 50px;
+}
+.login-popup .modal-header {
+  height: auto;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 0;
+}
+.login-popup .modal-body {
+  padding: 10px 15px 0 15px;
+}
+form.form--general {
+  position: relative;
+}
+.login-popup .form-group {
+  margin-bottom: 10px;
+}
+
 
 
 #home-slider {
