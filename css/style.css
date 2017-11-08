@@ -518,7 +518,10 @@ form.form--general {
 }
 
 
-.nav-top-menu1, .nav-top-menu2 {
+.navbar {
+  min-height: 40px;
+}
+.nav-top-menu1 {
   background: #0088cc;
   border: none;
   border-radius: 0;
@@ -526,18 +529,19 @@ form.form--general {
 }
 #header .menu {
   position: relative;
+  padding: 0;
 }
 .menu .navbar-nav>li>a {
   border-right: none;
   color: #fff;
-  text-transform: uppercase;
-  padding: 0 28px 0 0;
+  text-transform: none;
+  padding: 0 14px;
   background: transparent;
-  line-height: 60px;
+  line-height: 40px;
 }
 .menu .navbar-nav>li> a:hover, .menu .navbar-nav>li>a.active {
-  background: transparent;
-  color: #707070;
+  background: #1f6284;
+  color: #fff;
   outline: none;
 }
 .menu .navbar-nav .submenu {
@@ -611,10 +615,6 @@ form.form--general {
 }
 
 /* Slider */
-.header-top-right .homeslider {
-  width: 100%;
-  padding: 10px;
-}
 .bx-wrapper {
   margin: 0;
   border: 0;
@@ -1148,169 +1148,11 @@ form.form--general {
   padding-left: 10px;
 }
 
-#footer {
-  background: #fff;
-  padding-top: 40px;
-}
-#footer .footer-top {
-  padding: 10px 0;
-  border-top: 1px solid #eaeaea;
-}
-#footer .footer-top .footer-menu {
-  margin-top: 25px;
-}
-#footer .footer-top .footer-menu li {
-  display: inline;
-  float: left;
-  padding: 0 10px;
-}
-#footer .footer-social {
-  margin-top: 18px;
-}
-#footer .footer-social li {
-  display: inline;
-  float: right;
-}
-#footer .footer-social li>a {
-  color: #fff;
-  width: 32px;
-  height: 32px;
-  background: #415a99;
-  float: left;
-  text-align: center;
-  line-height: 32px;
-  margin-left: 5px;
-}
-#footer .footer-social li>a .fa {
-  line-height: inherit;
-}
-#footer .footer-social li>a.pinterest {
-  background: #cb222a;
-}
-#footer .footer-social li>a.vk {
-  background: #5b7fa6;
-}
-#footer .footer-social li>a.twitter {
-  background: #00caff;
-}
-#footer .footer-social li>a.google-plus {
-  background: #da4735;
-}
-#footer .footer-paralax {
-  background: url(../images/brand_prlx_bg-small.jpg) 50% 0 no-repeat fixed;
-  color: #fff;
-}
-#footer .footer-row {
-  padding: 45px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-#footer .footer-center {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  background: rgba(0, 0, 0, 0.6);
-}
-#footer .footer-center h3 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-#footer .footer-center p {
-  color: #999;
-  padding-bottom: 20px;
-}
-#footer .footer-row .form-subscribe {
-  width: 540px;
-  margin: 0 auto;
-  border: 1px solid #999;
-  line-height: normal;
-}
-#footer .footer-row .form-subscribe .form-group {
-  width: 100%;
-  position: relative;
-}
-#footer .footer-row .form-subscribe .form-control {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: inherit;
-  box-shadow: inherit;
-  padding-right: 40px;
-  color: #fff;
-}
-#footer .footer-row .form-subscribe .btn {
-  position: absolute;
-  top: 3px;
-  right: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: inherit;
-  box-shadow: inherit;
-  color: #fff;
-}
-#footer .footer-row {
-  padding: 45px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-#footer .widget-title {
-  text-transform: capitalize;
-  padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 18px;
-}
-#footer .widget-body ul {
-  padding-left: 25px;
-}
-#footer .widget-body li {
-  line-height: 30px;
-}
-#footer .widget-body li a {
-  color: #999;
-  margin-left: -25px;
-}
-#footer .widget-body li a:hover {
-  color: #fff;
-}
-#footer .widget-body li a:before {
-  font-family: 'FontAwesome';
-  font-size: 14px;
-  content: "\f105";
-  margin-right: 15px;
-}
-#footer .widget-body li a.location:before {
-  content: "\f041";
-}
-#footer .widget-body li a.phone:before {
-  content: "\f095";
-}
-#footer .widget-body li a.email:before {
-  content: "\f003";
-}
-#footer .widget-body li a.mobile:before {
-  content: "\f10b";
-}
-#footer .footer-bottom {
-  background-color: rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-#footer .footer-bottom .footer-bottom-wapper {
-  border-top: 1px solid #333333;
-  padding: 30px 0;
-}
-#footer .footer-bottom .footer-payment-logo {
-  text-align: right;
-}
 
-.block__footer {
-  text-align: center;
-  margin-top: 15px;
-}
+/* Footer */
 
+
+/* View More */
 .block__more {
   padding: 6px 15px 6px 15px;
   border: 1px solid #dedede;
