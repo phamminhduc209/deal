@@ -33,6 +33,16 @@
   .sticky-wrapper.is-sticky .fixed-res {
   	top: 55px !important;
   }
+  .footer .newsletter_input {
+	  width: 224px !important;
+	}
+	.footer .social_item {
+	  width: 30px;
+	  height: 30px;
+	}
+	.footer .hotline {
+	  font-size: 24px;
+	}
 }
 
 

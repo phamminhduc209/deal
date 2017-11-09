@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Detail</title>
+	<title>Details</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -20,7 +20,7 @@
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- ===== Responsive CSS ===== -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,570 +33,265 @@
 <body class="home">
 
 	<header id="header" class="header">
-		<div class="top-header">
+		<div class="header_top top-bar clearfix">
 			<div class="container">
-				<div class="nav-top-links">
-					<a class="first-item" href="#">Welcome to Shop</a>
-					<a href="#">Call Us: +09 957774334</a>
-				</div>
-				<!-- <a class="btn-fb-login" href="#">Login fb</a> -->
-				<div class="support-link">
-					<a href="#">Services</a>
-					<a href="#">Support</a>
-				</div>
-				<div id="user-info-top" class="user-info pull-right">
-					<div class="dropdown">
-						<a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>My Account</span></a>
-						<ul class="dropdown-menu mega_dropdown" role="menu">
-							<li><a href="login.html">Login</a></li>
-							<li><a href="#">Compare</a></li>
-							<li><a href="#">Wishlists</a></li>
+				<div class="row">
+					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right">
+						<ul id="user_info_header" class="navbar-right">
+							<li><i class="fa fa-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li>&nbsp; | &nbsp;</li>
+							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
+								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
+								<ul id="login-popup-header" class="dropdown-menu login-popup">
+									<li class="show-in-checkout">
+										<div class="modal-header">
+					            <h4 class="modal-title text-center">ÐĂNG NHẬP</h4>
+						        </div>
+								        <div class="modal-body clearfix">
+								        	<form action="" class="form-general fv-form fv-form-bootstrap">
+								        		<div class="form-group has-feedback">
+								        			<div class="input-group">
+								        				<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								        				<input type="text" name="" class="form-control" placeholder="Tên đăng nhập">
+								        			</div>
+								        			<i class="form-control-feedback fv-icon-no-label fv-bootstrap-icon-input-group glyphicon glyphicon-remove">
+								        				
+								        			</i>
+								        		</div>
+								        		<div class="form-group has-feedback has-error fv-has-tooltip">
+												    <div class="input-group">
+												        <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+												        <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu" autocomplete="off">
+												    </div>
+												    <i class="form-control-feedback fv-icon-no-label fv-bootstrap-icon-input-group glyphicon glyphicon-remove" data-fv-icon-for="password" style="cursor: pointer; pointer-events: auto;" data-original-title="" title=""></i>
+												    <small class="help-block">Vui lòng nhập mật khẩu</small>
+												    <small class="help-block">Mật khẩu phải từ 1 đến 64 kí tự</small>
+												</div>
+												<div class="form-group password-helper">
+												    <label for="remember_me" class="pull-left remember-me"><input type="checkbox" name="remember_me" id="remember_me" value="Y" checked="checked"> Ghi nhớ đăng nhập</label>
+												    <a class="pull-right" rel="nofollow" href="">Quên mật khẩu?</a>
+												</div>
+												<div class="form-group" style="margin-bottom: 0;">
+												    <button type="submit" class="btn btn-success btn-block disabled" disabled="disabled">ÐĂNG NHẬP</button>
+												    <p class="login-register-helper">Bạn chưa có tài khoản? <a rel="nofollow" href="#">Ðăng ký ngay</a></p>
+												</div>
+								        	</form>
+								        </div>
+								        <div class="modal-footer">
+										    <div class="text-left">
+										        <p style="margin-bottom: 5px;">Hoặc đăng nhập bằng</p>
+										        <div class="box-social">
+										            <a href="javascript:void(0);" class="login-facebook login-social social-facebook" id="login-facebook"><img src="images/icon-facebook.png" alt="Đăng nhập bằng Facebook"></a>
+										            <a href="javascript:void(0);" class="login-google login-social social-google" id="login-google"><img src="images/icon-google.png" alt="Đăng nhập bằng Google+"></a>
+										            <a href="javascript:void(0);" class="login-yahoo login-social social-yahoo" id="login-yahoo"><img src="images/icon-yahoo.png" alt="Đăng nhập bằng Yahoo!"></a>
+										        </div>
+										    </div>
+										</div>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</div>
+					</nav>
+					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right" style="border-right: 1px solid #fff;">
+					    <ul id="user_support" class="navbar-right">
+					        <li><a href="callto:19006760">
+					            <i class="fa fa-phone"></i> Hotline:&nbsp;<span class="hotline_number">1900 6760</span></a>
+					        </li>
+					        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					        <li>
+					            <a href="javascript:void($zopim.livechat.window.show())"><i class="fa fa-question-circle"></i> Hỗ trợ trực tuyến</a>
+					        </li>
+					    </ul>
+					</nav>
 				</div>
 			</div>
-		</div><!--/.top-header -->
-		<div id="main-header">
-			<div class="container main-header">
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 logo">
-	                    <a href="index.html"><img alt="Kute Shop" src="images/logo.jpg"></a>
-	                </div><!--/.logo -->
-
-					<div id="main-menu" class="col-sm-12 col-md-8 main-menu">
-						<div class="navbar navbar-default">
-							<div class="container-fluid">
-								<div class="navbar-header">
-								    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-								    <i class="fa fa-bars"></i>
-								    </button>
-								    <a class="navbar-brand" href="#">MENU</a>
-								</div>
-								<div id="navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav">
-										<li class="active" title="Trang Chủ"><a href="#">Trang Chủ</a></li>
-										<li class="dropdown">
-	                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" title="Mỹ Phẩm">Mỹ Phẩm</a>
-                                            <ul class="mega_dropdown dropdown-menu" style="width: 830px;">
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Asian</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Vietnamese Pho</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Seafood</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sausages</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Meat Dishes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Desserts</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">European</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Greek Potatoes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Chicken</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Italian Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">French Cakes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">FAST</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Hamberger</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sandwich</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Salad</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Paste</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="img_container">
-	                                                        <img src="images/banner-topmenu.jpg" alt="Banner">
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                        </ul>
-	                                    </li>
-	                                    <li class="dropdown">
-	                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" title="Thức Ăn Homemade">Thức Ăn Homemade</a>
-	                                        <ul class="mega_dropdown dropdown-menu" style="width: 830px;">
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Asian</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Vietnamese Pho</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Seafood</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sausages</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Meat Dishes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Desserts</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">European</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Greek Potatoes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Chicken</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Italian Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">French Cakes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">FAST</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Hamberger</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sandwich</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Salad</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Paste</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="img_container">
-	                                                        <img src="images/banner-topmenu.jpg" alt="Banner">
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                        </ul>
-	                                    </li>
-	                                    <li class="dropdown">
-	                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" title="Family">Family</a>
-	                                        <ul class="mega_dropdown dropdown-menu" style="width: 830px;">
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Asian</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Vietnamese Pho</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Seafood</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sausages</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Meat Dishes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Desserts</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">European</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Greek Potatoes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Chicken</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Italian Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">French Cakes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">FAST</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Hamberger</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sandwich</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Salad</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Paste</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="img_container">
-	                                                        <img src="images/banner-topmenu.jpg" alt="Banner">
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                        </ul>
-	                                    </li>
-	                                    <li class="dropdown">
-	                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" title="Quà Tặng">Quà Tặng</a>
-	                                        <ul class="mega_dropdown dropdown-menu" style="width: 830px;">
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Asian</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Vietnamese Pho</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Seafood</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sausages</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Meat Dishes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Desserts</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">European</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Greek Potatoes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Famous Spaghetti</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Chicken</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Italian Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">French Cakes</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">FAST</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Hamberger</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Pizza</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Noodles</a>
-	                                                    </li>
-	                                                    <li class="link_container group_header">
-	                                                        <a href="#">Sandwich</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Salad</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Paste</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                    <li class="link_container">
-	                                                        <a href="#">Tops</a>
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                            <li class="block-container col-sm-3">
-	                                                <ul class="block">
-	                                                    <li class="img_container">
-	                                                        <img src="images/banner-topmenu.jpg" alt="Banner">
-	                                                    </li>
-	                                                </ul>
-	                                            </li>
-	                                        </ul>
-	                                    </li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div><!--/.main-menu -->
-
-	                <div class="col-sm-2 col-md-1 group-button-header">
-					    <div class="btn-cart" id="cart-block">
-					        <a title="My cart" href="cart.html">My Cart</a>
-					        <span class="notify notify-right">10</span>
-					        <div class="cart-block">
-					            <div class="cart-block-content">
-					                <h5 class="cart-title">2 Items in my cart</h5>
-					                <div class="cart-block-list">
-					                    <ul>
-					                        <li class="product-info">
-					                            <div class="p-left">
-					                                <a href="#" class="remove_link"></a>
-					                                <a href="#">
-					                                <img class="img-responsive" src="images/cart/product-100x122.jpg" alt="p10">
-					                                </a>
-					                            </div>
-					                            <div class="p-right">
-					                                <p class="p-name">Donec Ac Tempus</p>
-					                                <p class="p-rice">61,19 €</p>
-					                                <p>Qty: 1</p>
-					                            </div>
-					                        </li>
-					                        <li class="product-info">
-					                            <div class="p-left">
-					                                <a href="#" class="remove_link"></a>
-					                                <a href="#">
-					                                <img class="img-responsive" src="images/cart/product-s5-100x122.jpg" alt="p10">
-					                                </a>
-					                            </div>
-					                            <div class="p-right">
-					                                <p class="p-name">Donec Ac Tempus</p>
-					                                <p class="p-rice">61,19 €</p>
-					                                <p>Qty: 1</p>
-					                            </div>
-					                        </li>
-					                    </ul>
-					                </div>
-					                <div class="toal-cart">
-					                    <span>Total</span>
-					                    <span class="toal-price pull-right">122.38 €</span>
-					                </div>
-					                <div class="cart-buttons">
-					                    <a href="order.html" class="btn-check-out">Checkout</a>
-					                </div>
-					            </div>
-					        </div>
-					    </div>
-					</div><!--/.group-button-header -->
-				</div>
-			</div>
-		</div><!--/.main-header -->
-		<div class="nav-top-menu">
+		</div><!-- /.header -->
+		<div class="header_main  clearfix">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-8 col-md-10 formsearch-option">
-						<form class="form-inline">
-							<div class="form-group form-category">
-	                            <select>
-	                                <option value="all">Tất cả danh mục</option>
-	                                <option value="1">Mỹ Phẩm</option>
-	                                <option value="2">Thức Ăn Homemade</option>
-	                                <option value="3">Family</option>
-	                                <option value="4">Quà Tặng</option>
-	                            </select>
-                          	</div>
-                          	<div class="form-group input-serach">
-								<input type="text" placeholder="Type Your Keyword...">
+					<a class="toggle-nav visible-xs visible-sm" data-target="#hd-container" data-effect="hd-effect-4">
+						<i class="fa fa-bars"></i>
+					</a><!-- /.toggle-nav -->
+					<a class="toggle-search visible-xs visible-sm" data-target="#main-search">
+						<i class="fa fa-search"></i>
+					</a><!-- /.toggle-search -->
+					<div class="logo-wrapper col-md-4">
+					    <a href="#" title="">
+					        <img src="images/logo.png" alt="">
+					    </a>
+					</div><!-- /.logo-wrapper -->
+					<div class="search-area col-md-6" id="main-search">
+						<form action="/tim-kiem" method="get" class="">
+							<div class="search-box form-inline clearfix">
+								<div class="search-box_category">
+									<select name="" class="select2">
+										<option value="0">Tất cả danh mục</option>
+									    <option value="557">- Ẩm thực</option>
+									    <option value="579">- Spa &amp; Làm đẹp</option>
+									    <option value="555">- Giải trí</option>
+									    <option value="581">- Du Lịch</option>
+									    <option value="571">- Sản Phẩm</option>
+									    <option value="593">- Thời Trang &amp; Phụ Kiện</option>
+									</select>
+								</div>
+								<div class="search-box_input">
+									<span class="twitter-typeahead">
+										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
+									</span>
+									<button class="btn btn-danger">
+	                                    <i class="fa fa-search"></i>
+	                                    <span class="sr-only">Tìm kiếm</span>
+	                                </button>
+								</div>
 							</div>
-							<button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
 						</form>
-					</div>
-					<div class="col-sm-4 col-md-2 group-link-main-menu">
-					    <div class="language link-mainmenu">
-					        <div class="dropdown">
-					            <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-					            <img alt="email" src="images/fr.jpg">French
-					            </a>
-					            <ul class="dropdown-menu" role="menu">
-					                <li><a href="#"><img alt="email" src="images/en.jpg">English</a></li>
-					                <li><a href="#"><img alt="email" src="images/fr.jpg">French</a></li>
-					            </ul>
-					        </div>
-					    </div>
-					    <div class="currency link-mainmenu">
-					        <div class="dropdown">
-					            <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">USD</a>
-					            <ul class="dropdown-menu" role="menu">
-					                <li><a href="#">Dollar</a></li>
-					                <li><a href="#">Euro</a></li>
-					            </ul>
-					        </div>
-					    </div>
-					</div>
+					</div><!-- /.search-area -->
+					<div class="col-md-2 header-cart-wrapper">
+						<ul class="header-cart">
+							<li class="nav-cart">
+								<a href="#" data-toggle="dropdown">
+									<span class="icon-cart"><img src="images/cart.jpg" alt=""></span>
+									<span class="circle">1</span>
+									<span class="hidden-xs hidden-sm">Giỏ hàng</span>
+								</a>
+								<div class="dropdown-menu dropdown-cart">
+									<div class="minicart_wrapper">
+									    <div class="minicart_item">
+									        <div class="minicart_item_info">
+									            <img src="images/cart/338333-buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3.jpg" alt="">
+									            <div class="minicart_item_name">
+									                <div><a href="/ho-chi-minh/buffet-viet-nhat-han/buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3-338333.html">Buffet Trưa BBQ Bò Mỹ - Hải Sản - Lẩu Gần 50 Món Tại Nhà Hàng Yaki 3 - <span style="color: #999;">Mã SP: 338333</span></a></div>
+									                <span class="minicart_item_price price"><span class="price_value">150,000</span><span class="price_symbol">đ</span></span> x 1
+									            </div>
+									        </div>
+									        <div class="minicart_item_actions"><a href="#" rel="nofollow" data-product="338333" title="Xóa khỏi giỏ hàng" class="btn-close show-on-hover">x</a></div>
+									    </div>
+									</div><!-- /.minicart_wrapper -->
+									<div class="minicart_summary">
+									    Tổng cộng: <strong>
+									    <span class="price price-highlight">
+									    <span class="price_value">150,000</span>
+									    <span class="price_symbol">đ</span>
+									    </span></strong>
+									</div><!-- /.minicart_summary -->
+									<div class="minicart_actions">
+									    <a class="btn btn-view-cart" href="/checkout-step-1" rel="nofollow">Xem giỏ hàng</a>
+									    <a class="btn btn-success btn-buy-now btn-buy-now-new" href="/checkout-step-2" rel="nofollow">Đặt hàng</a>
+									</div><!-- /.minicart_actions -->
+								</div><!-- /.dropdown-menu dropdown-cart -->
+							</li>
+						</ul><!-- /.header-cart -->
+					</div><!-- /.header-cart-wrapper -->
 				</div>
 			</div>
-		</div>
+		</div><!-- /.header_main -->
+		<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
+	        <div class="container" id="main-menu">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
+		              <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+		            </button>
+				</div>
+				<div class="collapse navbar-collapse menu" id="menu-navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li class="level0 parent"><a class="active" href="#" title="">Trang chủ</a></li>
+						<li class="level0 parent">
+							<a href="#" title="">Mỹ Phẩm</a>
+							<ul class="level0 submenu">
+								<li class="level1 parent">
+									<a href="#" title="">Kem</a>
+									<ul class="level1 submenu">
+										<li><a href="#" title="">Sữa rửa mặt</a></li>
+										<li><a href="#" title="">Bột rửa mặt</a></li>
+										<li><a href="#" title="">Dung dịch hoa hồng</a></li>
+										<li><a href="#" title="">Các loại sản phẩm đi kèm chăm sóc da</a></li>
+									</ul>
+								</li>
+								<li class="level1 parent">
+									<a href="#" title="">Dành cho cơ thể</a>
+									<ul class="level1 submenu">
+										<li><a href="#" title="">Sữa tắm</a></li>
+										<li><a href="#" title="">Sữa dưỡng da</a></li>
+										<li><a href="#" title="">Các loại mỹ phẩm bảo về da chống nắng</a></li>
+									</ul>
+								</li>
+								<li class="level1 parent">
+									<a href="#" title="">Dòng sản phẩm trang điểm</a>
+									<ul class="level1 submenu">
+										<li><a href="#" title="">Phấn trang điểm</a></li>
+										<li><a href="#" title="">Kem nền</a></li>
+										<li><a href="#" title="">Son</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="level0 parent">
+							<a href="#" title="">Dòng thức ăn homemade</a>
+							<ul class="level0 submenu">
+								<li class="level1">
+									<a href="#" title="">Bánh sản xuất theo lịch hàng ngày</a>
+								</li>
+								<li class="level1 parent">
+									<a href="#" title="">Các thực phẩm khô</a>
+									<ul class="level1 submenu">
+										<li><a href="#" title="">Khô bò</a></li>
+										<li><a href="#" title="">Khô gà</a></li>
+									</ul>
+								</li>
+								<li class="level1 parent">
+									<a href="#" title="">Thực phẩm dùng trong thời gian cố định</a>
+									<ul class="level1 submenu">
+										<li><a href="#" title="">Lạp xưởng tươi - khô</a></li>
+										<li><a href="#" title="">Sản phẩm sấy khô</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="level0 parent">
+							<a href="#" title="">Dòng sản phẩm family</a>
+							<ul class="level0 submenu">
+								<li class="level1">
+									<a href="#" title="">Phụ kiện nữ</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Phụ kiện nam</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Dụng cụ dành cho trẻ em, sơ sinh</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Bedroom</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Kitchen</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level0 parent">
+							<a href="#" title="">Quà tặng cao cấp</a>
+							<ul class="level0 submenu">
+								<li class="level1">
+									<a href="#" title="">Sâm, linhc chi, tổ yến</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Rượu nhập các loại</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Bánh nguyên hôp thiếc nhập Nhật</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Thực phẩm chức năng từ Nhật - Mỹ - Úc - Hà Lan</a>
+								</li>
+								<li class="level1">
+									<a href="#" title="">Kitchen</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="contact.html" title="">Liên hệ</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+	        </div>
+    	</nav><!-- END NAVIGATION -->
 	</header><!-- /.header -->
 
 	<div class="container">
@@ -612,47 +307,47 @@
 
 	<main class="main-content clearfix">
 		<div class="container">
-			<div class="product product--details clearfix">
-				<div class="product__gallery gallery ">
-					<div class="gallery__image">
+			<div class="product product-details clearfix">
+				<div class="product_gallery gallery ">
+					<div class="gallery_image">
 						aa
 					</div>
-				</div><!-- /.gallery__image -->
-				<div class="product__details">
-					<div class="product__header">
-						<h1 class="product__title">Buffet Fast Food Kiểu Singapore Độc Đáo - Laho Claypot &amp; Bubble Tea</h1>
-						<div class="product__sharing sharing">
-							<div class="sharing__item">share1</div>
-							<div class="sharing__item">share2</div>
-							<div class="sharing__item">share3</div>
+				</div><!-- /.gallery_image -->
+				<div class="product_details">
+					<div class="product_header">
+						<h1 class="product_title">Buffet Fast Food Kiểu Singapore Độc Đáo - Laho Claypot &amp; Bubble Tea</h1>
+						<div class="product_sharing sharing">
+							<div class="sharing_item">share1</div>
+							<div class="sharing_item">share2</div>
+							<div class="sharing_item">share3</div>
 						</div>
 					</div>
-					<div class="product__description" style="border-bottom: 1px solid #eaeaea;">
+					<div class="product_description" style="border-bottom: 1px solid #eaeaea;">
                     	<p>Thỏa Thích Ăn Vặt Trong Không Gian Sạch Sẽ, Trẻ Trung Với Buffet Fast Food Kiểu Singapore Độc Đáo Tại Laho Claypot &amp; Bubble Tea. Voucher 89,000 VNĐ, Còn 47,000 VNĐ, Giảm 47%. Chỉ Có Tại Hotdeal.vn!</p>
                 	</div>
-                	<div class="product__price-info clearfix">
+                	<div class="product_price-info clearfix">
 					    <div class="box-price-detail">
-					        <div class="product__price product__price--list-price _product_price_old">
-					            <span class="price price--list-price">
+					        <div class="product_price product_price-list-price _product_price_old">
+					            <span class="price price-list-price">
 						            <span class="hidden-xs hidden-sm">Giá gốc:&nbsp;</span>
-						            <span class="price__value">89,000</span>
-						            <span class="price__symbol">đ</span>
+						            <span class="price_value">89,000</span>
+						            <span class="price_symbol">đ</span>
 					            </span>
 					        </div>
-					        <div class="product__price _product_price">
+					        <div class="product_price _product_price">
 					        	<span class="price">
-									<span class="price__value" itemprop="price">47,000</span><span class="price__symbol">đ</span>
-									<span class="price__discount">-47%</span>
+									<span class="price_value" itemprop="price">47,000</span><span class="price_symbol">đ</span>
+									<span class="price_discount">-47%</span>
 								</span>
 					        </div>
 					    </div>
 					</div>
-					<div class="product__add-to-cart border-top clearfix">
-						<form id="form-add-to-cart" action="#" class="add-to-cart add-to-cart--form">
+					<div class="product_add-to-cart border-top clearfix">
+						<form id="form-add-to-cart" action="#" class="add-to-cart add-to-cart-form">
 							<div class="clearfix">
-								<div class="add-to-cart__quantity quantity box-quantity">
-									<span class="quantity__text">Số lượng</span>
-									<select name="" class="_quantity-select quantity__modifier quantity-modifier quantity-modifier-select ">
+								<div class="add-to-cart_quantity quantity box-quantity">
+									<span class="quantity_text">Số lượng</span>
+									<select name="" class="_quantity-select quantity_modifier quantity-modifier quantity-modifier-select ">
 										<option value="1">1</option>
 	                                    <option value="2">2</option>
 	                                    <option value="3">3</option>
@@ -666,11 +361,11 @@
 									</select>
 								</div>
 							</div>
-							<div class="add-to-cart__actions add-to-cart-buttons">
-								<button class="btn btn-success btn--buy-now btn--buy-now-x2">
+							<div class="add-to-cart_actions add-to-cart-buttons">
+								<button class="btn btn-success btn-buy-now btn-buy-now-x2">
 					                MUA NGAY <i class="fa fa-long-arrow-right"></i>
 					            </button>
-					            <button id="add-to-cart" class="btn btn-default btn--add-to-cart">
+					            <button id="add-to-cart" class="btn btn-default btn-add-to-cart">
 				                    <i class="fa fa-shopping-cart"></i> THÊM VÀO GIỎ HÀNG
 				                </button>
 							</div>
@@ -715,7 +410,7 @@
 					        <p style="text-align: justify;">- Phiếu không có giá trị quy đổi thành tiền mặt, không trả lại tiền thừa.</p>
 					    </div>
 					</div><!-- /.col-md-6 -->
-					<a class="btn btn-default btn--view-more">
+					<a class="btn btn-default btn-view-more">
 	                    <span class="more-text">Xem thêm <i class="fa fa-chevron-down"></i></span>
 	                    <span class="less-text">Thu gọn <i class="fa fa-chevron-up"></i></span>
 	                </a><!-- /.btn -->
@@ -735,7 +430,7 @@
 								<div class="block_header  clearfix">
 						            <h3 class="block_title">Thông tin chi tiết</h3>
 						        </div>
-						        <div class="block__content clearfix">
+						        <div class="block_content clearfix">
 						        	<div class="wysiwyg">
 									    <p style="text-align:center">
 									    <div class="iframe-wrapper">
@@ -829,37 +524,37 @@
 			  		</div>
 				</div>
 				<div class="sidebar">
-					<div class="block block--normal">
+					<div class="block block-normal">
 						<div class="block_header">
 					        <h3 class="block_title">Deal liên quan</h3>
 					    </div>
-					    <div class="block__content clearfix">
-					    	<div class="products products--list">
+					    <div class="block_content clearfix">
+					    	<div class="products products-list">
 					    		<div class="product-wrapper product-auto-resize product-image-padding">
 					    			<div class="product">
-					    				<div class="product__image">
+					    				<div class="product_image">
 		                            		<a href="#" title="">
 		                                		<img class="img-responsive" alt="product" src="images/product/food/1.jpg" />
 		                                	</a>
 		                            	</div>
-		                            	<div class="product__header">
-		                            		<h3 class="product__title">
+		                            	<div class="product_header">
+		                            		<h3 class="product_title">
 								                <a href="#" title="">Hệ Thống Chewy Junior - Bánh Su Kem Singapore Ngon Nhất Sài Gòn</a>
 								            </h3>
 		                            	</div>
-		                            	<div class="product__info">
-		                            		<div class="product__price _product_price">
+		                            	<div class="product_info">
+		                            		<div class="product_price _product_price">
 												<span class="price">
-													<span class="price__value" itemprop="price">69,000</span><span class="price__symbol">đ</span>
-													<span class="price__discount">-31%</span>
+													<span class="price_value" itemprop="price">69,000</span><span class="price_symbol">đ</span>
+													<span class="price_discount">-31%</span>
 												</span>
 											</div>
-											<div class="product__price product__price--list-price _product_price_old " style="display: inline-block;">
-											    <span class="price price--list-price">
-											    <span class="price__value">100,000</span><span class="price__symbol">đ</span>
+											<div class="product_price product_price-list-price _product_price_old " style="display: inline-block;">
+											    <span class="price price-list-price">
+											    <span class="price_value">100,000</span><span class="price_symbol">đ</span>
 											    </span>
 											</div>
-											<div class="product__views">
+											<div class="product_views">
 												<i class="fa fa-user-o"></i> 161
 											</div>
 		                            	</div>
@@ -873,134 +568,102 @@
 		</div>
 	</main><!-- /.main -->
 
-	<footer id="footer">
-		<div class="footer-top">
+	<footer id="footer" class="footer clearfix">
+		<div class="footer_top">
 		    <div class="container">
 		        <div class="row">
-		            <div class="col-sm-3">
-		                <div class="footer-logo">
-		                    <a href="#"><img src="images/logo.jpg" alt="Logo"></a>
+		            <div class="col-md-8">
+		                <div class="row footer-menu">
+		                    <div class="col-md-4 footer-menu_column menu">
+		                        <h3 class="menu_heading">Giới thiệu</h3>
+		                        <ul class="menu_listing">
+		                            <li><a href="#">Về Chúng Tôi</a></li>
+		                            <li><a href="#">Quy chế hoạt động</a></li>
+		                            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+		                            <li><a href="#">Cơ chế giải quyết tranh chấp</a></li>
+		                            <li><a href="#">Liên Hệ</a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="col-md-4 footer-menu_column menu">
+		                        <h3 class="menu_heading">Trợ giúp</h3>
+		                        <ul class="menu_listing">
+		                            <li><a href="#">Quy trình xử lý khi phát hiện hành vi kinh doanh vi phạm </a></li>
+		                            <li><a href="#">Biện pháp xử lý khi phát hiện hành vi kinh doanh vi phạm </a></li>
+		                            <li><a href="#">Cơ chế kiểm soát các nhà cung cấp</a></li>
+		                            <li><a href="#">Hotdeal E-voucher</a></li>
+		                            <li><a href="#">Chính sách giao hàng</a></li>
+		                            <li><a href="#">Chính sách đổi trả hàng</a></li>
+		                            <li><a href="#">Cách thức thanh toán</a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="col-md-4 footer-menu_column menu">
+		                        <h3 class="menu_heading">Hợp tác</h3>
+		                        <ul class="menu_listing">
+		                            <li><a href="#">Hợp tác kinh doanh</a></li>
+		                            <li><a href="#">Liên hệ hợp tác</a></li>
+		                        </ul>
+		                    </div>
 		                </div>
 		            </div>
-		            <div class="col-sm-6">
-		                <div class="footer-menu">
-		                    <ul>
-		                        <li><a href="#">About Us</a></li>
-		                        <li><a href="#">Affiliates</a></li>
-		                        <li><a href="#">Careers</a></li>
-		                        <li><a href="#">Privacy Policy</a></li>
-		                        <li><a href="#">Terms of Use</a></li>
-		                        <li><a href="#">Contact Us</a></li>
-		                    </ul>
-		                </div>
-		            </div>
-		            <div class="col-sm-3">
-		                <div class="footer-social">
-		                    <ul>
-		                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-		                        <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-		                        <li><a class="vk" href="#"><i class="fa fa-vk"></i></a></li>
-		                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-		                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-		                    </ul>
+		            <div class="col-md-4 support-info">
+		                <div class="col-md-12">
+		                    <h3 class="support-info_heading">Trung tâm chăm sóc khách hàng Tp.HCM</h3>
+		                    <div class="support-info_address">
+		                        70 Lữ Gia, Phường 15, Quận 11, TP.HCM 
+		                    </div>
+		                    <div class="support-info_contact contact">
+		                        <div class="contact_email">Fax: (028) 3866 6237</div>
+		                        <div class="contact_email">Email: <a href="mailto:cs@hotdeal.vn"> cs@hotdeal.vn</a></div>
+		                    </div>
 		                </div>
 		            </div>
 		        </div>
 		    </div>
-		</div><!-- /.footer-top -->
-		<div class="footer-paralax">
-			<div class="footer-row footer-center">
-			    <div class="container">
-			        <h3>Sign up below for early updates</h3>
-			        <p>You a Client , large or small, and want to participate in this adventure, please send us an email to support@kuteshop.com</p>
-			        <form class="form-inline form-subscribe">
-			            <div class="form-group">
-			                <input type="text" class="form-control" placeholder="Enter Your E-mail Address">
-			                <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane-o"></i></button>
-			            </div>
-			        </form>
-			    </div>
+		</div>
+		<div class="footer_middle">
+			<div class="container">
+				<div class="col-fter-1 col-xs-0">
+					<form action="#" class="fv-form fv-form-bootstrap">
+						<p><strong>Đăng ký nhận bản tin khuyến mãi</strong></p>
+						<div class="newsletter form-inline">
+							<div class="form-group has-feedback">
+								<div class="input-group">
+									<input type="text" class="form-control newsletter_input" name="" placeholder="Nhập email của bạn" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<button type="submit" class="btn btn-success newsletter_button">Đăng ký
+									</button>
+								</div>
+							</div>
+						</div>
+						<label class="control-label register-new-letter-comfirm-footer" style="font-weight: normal;">
+							<input type="checkbox" name="" value="1">
+							Đồng ý với <a target="_blank" href="#">chính sách bảo mật thông tin</a>.
+						</label>
+					</form>
+				</div>
+				<div class="col-fter-3">
+					<div class="social">
+						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI HOTDEAL</div>
+						<div class="social_items">
+							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="fa fa-google-plus"></i></a>
+							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-fter-4">
+					<div class="hotline">
+						<span class="hotline_text">HOTLINE&nbsp;</span>
+						<span class="hotline_number">1900 6760</span>
+					</div>
+				</div>
 			</div>
-		</div><!-- /.footer-paralax -->
-		<div class="footer-row">
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-sm-3">
-		                <div class="widget-container">
-		                    <h3 class="widget-title">Infomation</h3>
-		                    <div class="widget-body">
-		                        <ul>
-		                            <li><a class="location" href="#">2046 Blue Spruce Lane Laurel, tetxac, Orton Tolanto, Canada</a></li>
-		                            <li><a class="phone" href="#">0200 410-369-3920</a></li>
-		                            <li><a class="email" href="#">nfo@kutethemes.com</a></li>
-		                            <li><a class="mobile" href="#">Hotline: 090 999 8686</a></li>
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-sm-3">
-		                <div class="widget-container">
-		                    <h3 class="widget-title">Company</h3>
-		                    <div class="widget-body">
-		                        <ul>
-		                            <li><a href="#">About Us</a></li>
-		                            <li><a href="#">Testimonials</a></li>
-		                            <li><a href="#">Affiliate Program</a></li>
-		                            <li><a href="#">Terms &amp; Conditions</a></li>
-		                            <li><a href="#">Contact Us</a></li>
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-sm-3">
-		                <div class="widget-container">
-		                    <h3 class="widget-title">My Account</h3>
-		                    <div class="widget-body">
-		                        <ul>
-		                            <li><a href="#">My Orders</a></li>
-		                            <li><a href="#">My Credit Slips</a></li>
-		                            <li><a href="#">My Addresses</a></li>
-		                            <li><a href="#">My Personal Info</a></li>
-		                            <li><a href="#">Specials</a></li>
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="col-sm-3">
-		                <div class="widget-container">
-		                    <h3 class="widget-title">Support</h3>
-		                    <div class="widget-body">
-		                        <ul>
-		                            <li><a href="#">Payments &amp; My Vouchers</a></li>
-		                            <li><a href="#">Saved Cards</a></li>
-		                            <li><a href="#">Shipping Free</a></li>
-		                            <li><a href="#">Cancellation &amp; Returns</a></li>
-		                            <li><a href="#">FAQ &amp; Support Online</a></li>
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div><!-- /.footer-row -->
-		<div class="footer-bottom">
-		    <div class="container">
-		        <div class="footer-bottom-wapper">
-		            <div class="row">
-		                <div class="col-sm-8">
-		                    <div class="footer-coppyright">
-		                        Copyright © 2017
-		                    </div>
-		                </div>
-		                <div class="col-sm-4">
-		                    <div class="footer-payment-logo">
-		                        <img src="images/payment-logo.png" alt="payment logo">
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div><!-- /.footer-bottom -->
+		</div>
 	</footer>
 
 	<!-- ===== JS ===== -->
