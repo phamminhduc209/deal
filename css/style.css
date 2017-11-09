@@ -620,7 +620,7 @@ form.form--general {
   border: 0;
   box-shadow: none;
 }
-.header-top-right .homeslider .bx-wrapper .bx-viewport {
+.homeslider .bx-wrapper .bx-viewport {
   -moz-box-shadow: 0;
   -webkit-box-shadow: 0;
   box-shadow: none;
@@ -628,11 +628,11 @@ form.form--general {
   left: 0;
   background: #fff;
 }
-.header-top-right .homeslider img {
+.homeslider img {
   width: 100%;
   height: auto;
 }
-.header-top-right .homeslider .bx-controls-direction .bx-prev, .header-top-right .homeslider .bx-controls-direction .bx-next {
+.homeslider .bx-controls-direction .bx-prev, .homeslider .bx-controls-direction .bx-next {
   background: #0088cc;
   text-indent: 0px!important;
   color: #fff;
@@ -651,18 +651,18 @@ form.form--general {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.header-top-right .homeslider .bx-controls-direction .bx-prev {
+.homeslider .bx-controls-direction .bx-prev {
   left: 50%;
 }
-.header-top-right .homeslider .bx-controls-direction .bx-next {
+.homeslider .bx-controls-direction .bx-next {
   right: 50%;
 }
-.header-top-right .homeslider:hover .bx-controls-direction .bx-prev {
+.homeslider:hover .bx-controls-direction .bx-prev {
   left: 10px;
   opacity: 1;
   visibility: inherit;
 }
-.header-top-right .homeslider:hover .bx-controls-direction .bx-next {
+.homeslider:hover .bx-controls-direction .bx-next {
   right: 10px;
   opacity: 1;
   visibility: inherit;
