@@ -85,10 +85,6 @@
   */
   $('.fixed').sticky({ topSpacing: 0 });
   $('.fixed-res').sticky({ topSpacing: 105 });
-  /*
-   * 3. select2
-  */
-  $('.select2').select2();
 
   /**==============================
     ***  Auto width megamenu

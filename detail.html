@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Details</title>
+	<title>Home</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -19,6 +19,7 @@
 
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-hd.css">
 	<!-- ===== Responsive CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -38,7 +39,7 @@
 				<div class="row">
 					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right">
 						<ul id="user_info_header" class="navbar-right">
-							<li><i class="fa fa-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li><i class="hd hd-user"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
 							<li>&nbsp; | &nbsp;</li>
 							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
 								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
@@ -51,7 +52,7 @@
 								        	<form action="" class="form-general fv-form fv-form-bootstrap">
 								        		<div class="form-group has-feedback">
 								        			<div class="input-group">
-								        				<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								        				<div class="input-group-addon"><i class="hd hd-user"></i></div>
 								        				<input type="text" name="" class="form-control" placeholder="Tên đăng nhập">
 								        			</div>
 								        			<i class="form-control-feedback fv-icon-no-label fv-bootstrap-icon-input-group glyphicon glyphicon-remove">
@@ -60,7 +61,7 @@
 								        		</div>
 								        		<div class="form-group has-feedback has-error fv-has-tooltip">
 												    <div class="input-group">
-												        <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+												        <div class="input-group-addon"><i class="hd hd-lock"></i></div>
 												        <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu" autocomplete="off">
 												    </div>
 												    <i class="form-control-feedback fv-icon-no-label fv-bootstrap-icon-input-group glyphicon glyphicon-remove" data-fv-icon-for="password" style="cursor: pointer; pointer-events: auto;" data-original-title="" title=""></i>
@@ -95,11 +96,11 @@
 					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right" style="border-right: 1px solid #fff;">
 					    <ul id="user_support" class="navbar-right">
 					        <li><a href="callto:19006760">
-					            <i class="fa fa-phone"></i> Hotline:&nbsp;<span class="hotline_number">1900 6760</span></a>
+					            <i class="hd hd-phone"></i> Hotline:&nbsp;<span class="hotline_number">1900 6760</span></a>
 					        </li>
 					        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 					        <li>
-					            <a href="javascript:void($zopim.livechat.window.show())"><i class="fa fa-question-circle"></i> Hỗ trợ trực tuyến</a>
+					            <a href="javascript:void($zopim.livechat.window.show())"><i class="hd hd-question-circle"></i> Hỗ trợ trực tuyến</a>
 					        </li>
 					    </ul>
 					</nav>
@@ -110,10 +111,10 @@
 			<div class="container">
 				<div class="row">
 					<a class="toggle-nav visible-xs visible-sm" data-target="#hd-container" data-effect="hd-effect-4">
-						<i class="fa fa-bars"></i>
+						<i class="hd hd-bars"></i>
 					</a><!-- /.toggle-nav -->
 					<a class="toggle-search visible-xs visible-sm" data-target="#main-search">
-						<i class="fa fa-search"></i>
+						<i class="hd hd-search"></i>
 					</a><!-- /.toggle-search -->
 					<div class="logo-wrapper col-md-4">
 					    <a href="#" title="">
@@ -124,24 +125,24 @@
 						<form action="/tim-kiem" method="get" class="">
 							<div class="search-box form-inline clearfix">
 								<div class="search-box_category">
-									<select name="" class="select2">
+									<select class="selectpicker" id="category_search" name="category">
 										<option value="0">Tất cả danh mục</option>
-									    <option value="557">- Ẩm thực</option>
-									    <option value="579">- Spa &amp; Làm đẹp</option>
-									    <option value="555">- Giải trí</option>
-									    <option value="581">- Du Lịch</option>
-									    <option value="571">- Sản Phẩm</option>
-									    <option value="593">- Thời Trang &amp; Phụ Kiện</option>
+										<option value="557">- Ẩm thực</option>
+										<option value="579">- Spa &apm; Làm đẹp</option>
+										<option value="555">- Giải trí</option>
+										<option value="581">- Du Lịch</option>
+										<option value="571">- Sản Phẩm</option>
+										<option value="593">- Thời Trang &apm; Phụ Kiện</option>
 									</select>
 								</div>
 								<div class="search-box_input">
 									<span class="twitter-typeahead">
 										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
 									</span>
-									<button class="btn btn-danger">
-	                                    <i class="fa fa-search"></i>
-	                                    <span class="sr-only">Tìm kiếm</span>
-	                                </button>
+									<button class="btn btn-primary">
+                    <i class="hd hd-search"></i>
+                    <span class="sr-only">Tìm kiếm</span>
+                  </button>
 								</div>
 							</div>
 						</form>
@@ -186,11 +187,11 @@
 			</div>
 		</div><!-- /.header_main -->
 		<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
-	        <div class="container" id="main-menu">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
-		              <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-		            </button>
+      <div class="container" id="main-menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
+          </button>
 				</div>
 				<div class="collapse navbar-collapse menu" id="menu-navbar-collapse">
 					<ul class="nav navbar-nav navbar-left">
@@ -658,7 +659,7 @@
 			<div class="container">
 				<div class="col-fter-1 col-xs-0">
 					<form action="#" class="fv-form fv-form-bootstrap">
-						<p><strong>Đăng ký nhận bản tin khuyến mãi</strong></p>
+						<p style="margin-bottom: 10px;"><strong>Đăng ký nhận bản tin khuyến mãi</strong></p>
 						<div class="newsletter form-inline">
 							<div class="form-group has-feedback">
 								<div class="input-group">
@@ -680,7 +681,7 @@
 				</div>
 				<div class="col-fter-3">
 					<div class="social">
-						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI HOTDEAL</div>
+						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI Shop</div>
 						<div class="social_items">
 							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="fa fa-facebook"></i></a>
 							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="fa fa-twitter"></i></a>
@@ -696,9 +697,27 @@
 						<span class="hotline_number">1900 6760</span>
 					</div>
 				</div>
+				 <div class="col-fter-5">
+		            <a target="_blank" href="#">
+		            <img class="img-responsive" src="images/logo-bct.png" style="max-width: 165px;">
+		            </a>
+		        </div>
 			</div>
 		</div>
-	</footer>
+		<div class="footer_bottom ">
+		    <div class="container">
+	            <p class="text-center">
+	                <strong class="font15">CÔNG TY CỔ PHẦN HOTDEAL - <br class="visible-xs visible-sm"> TẦNG 2, LỮ GIA PLAZA, 70 LỮ GIA, P.15, Q.11, TP HCM</strong><br>
+	                Mã số thuế: 0310955176 do Sở Kế hoạch đầu tư <br class="visible-xs visible-sm">TP HCM cấp ngày 29/06/2011<br>
+	                ĐT: 028.73055707 – Fax: 028.38666237 - <br class="visible-xs visible-sm">Email: <a href="mailto:kinhdoanh@.vn">kinhdoanh@.vn</a>
+	            </p>
+		    </div>
+		</div>
+	</footer><!-- /.footer -->
+
+	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
+  		<i class="fa fa-angle-up" aria-hidden="true"></i>
+	</a><!-- return to top -->
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
@@ -710,8 +729,8 @@
 	<script src="lib/bxslider/jquery.bxslider.min.js"></script>
 	<!-- Flexslider -->
     <script src="lib/flexslider/jquery.flexslider-min.js"></script>
-	<!-- ===== Select ===== -->
-    <script src="lib/select2/js/select2.min.js"></script>
+	<!-- ===== Bootstrap Select ===== -->
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
     <!-- ===== Countdown ===== -->
     <script type="text/javascript" src="js/jquery.plugin.js"></script>
     <script src="lib/countdown/jquery.countdown.js"></script>

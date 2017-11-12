@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Cart Infomation</title>
+	<title>Home</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -39,7 +39,7 @@
 				<div class="row">
 					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right">
 						<ul id="user_info_header" class="navbar-right">
-							<li><i class="hd hd-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li><i class="hd hd-user"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
 							<li>&nbsp; | &nbsp;</li>
 							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
 								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
@@ -125,24 +125,24 @@
 						<form action="/tim-kiem" method="get" class="">
 							<div class="search-box form-inline clearfix">
 								<div class="search-box_category">
-									<select name="" class="select2">
+									<select class="selectpicker" id="category_search" name="category">
 										<option value="0">Tất cả danh mục</option>
-									    <option value="557">- Ẩm thực</option>
-									    <option value="579">- Spa &amp; Làm đẹp</option>
-									    <option value="555">- Giải trí</option>
-									    <option value="581">- Du Lịch</option>
-									    <option value="571">- Sản Phẩm</option>
-									    <option value="593">- Thời Trang &amp; Phụ Kiện</option>
+										<option value="557">- Ẩm thực</option>
+										<option value="579">- Spa &apm; Làm đẹp</option>
+										<option value="555">- Giải trí</option>
+										<option value="581">- Du Lịch</option>
+										<option value="571">- Sản Phẩm</option>
+										<option value="593">- Thời Trang &apm; Phụ Kiện</option>
 									</select>
 								</div>
 								<div class="search-box_input">
 									<span class="twitter-typeahead">
 										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
 									</span>
-									<button class="btn btn-danger">
-	                                    <i class="hd hd-search"></i>
-	                                    <span class="sr-only">Tìm kiếm</span>
-	                                </button>
+									<button class="btn btn-primary">
+                    <i class="hd hd-search"></i>
+                    <span class="sr-only">Tìm kiếm</span>
+                  </button>
 								</div>
 							</div>
 						</form>
@@ -187,11 +187,11 @@
 			</div>
 		</div><!-- /.header_main -->
 		<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
-	        <div class="container" id="main-menu">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
-		              <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
-		            </button>
+      <div class="container" id="main-menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
+          </button>
 				</div>
 				<div class="collapse navbar-collapse menu" id="menu-navbar-collapse">
 					<ul class="nav navbar-nav navbar-left">
@@ -577,13 +577,13 @@
 				</div>
 				<div class="col-fter-3">
 					<div class="social">
-						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI HOTDEAL</div>
+						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI Shop</div>
 						<div class="social_items">
-							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="hd hd-facebook"></i></a>
-							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="hd hd-twitter"></i></a>
-							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="hd hd-google-plus"></i></a>
-							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="hd hd-linkedin"></i></a>
-							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="hd hd-youtube"></i></a>
+							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="fa fa-google-plus"></i></a>
+							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="fa fa-youtube"></i></a>
 						</div>
 					</div>
 				</div>
@@ -609,7 +609,7 @@
 	            </p>
 		    </div>
 		</div>
-	</footer>
+	</footer><!-- /.footer -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -619,15 +619,18 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
-	<!-- carousel -->
-	<script src="lib/carousel/owl.carousel.min.js"></script>
-	<!-- sticky -->
+	<!-- ===== carousel ===== -->
+	<script src="lib/owl.carousel/owl.carousel.min.js"></script>
+	<!-- ===== Bxslider ===== -->
+	<script src="lib/bxslider/jquery.bxslider.min.js"></script>
+	<!-- ===== Bootstrap Select ===== -->
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- ===== Countdown ===== -->
+    <script type="text/javascript" src="js/jquery.plugin.js"></script>
+    <script src="lib/countdown/jquery.countdown.js"></script>
+	<!-- ===== Sticky ===== -->
     <script src="lib/sticky/jquery.sticky.js"></script>
-    <!-- Js zoom -->
-    <script src="lib/jquery.zoom.min.js"></script>
-    <!-- Flexslider -->
-    <script src="lib/flexslider/jquery.flexslider-min.js"></script>
-    <!-- Js Common -->
+    <!-- ===== Js Common ===== -->
 	<script src="js/common.js"></script>
 
 </body>

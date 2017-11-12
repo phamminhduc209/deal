@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Payment</title>
+	<title>Home</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -39,7 +39,7 @@
 				<div class="row">
 					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right">
 						<ul id="user_info_header" class="navbar-right">
-							<li><i class="hd hd-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li><i class="hd hd-user"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
 							<li>&nbsp; | &nbsp;</li>
 							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
 								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
@@ -125,24 +125,24 @@
 						<form action="/tim-kiem" method="get" class="">
 							<div class="search-box form-inline clearfix">
 								<div class="search-box_category">
-									<select name="" class="select2">
+									<select class="selectpicker" id="category_search" name="category">
 										<option value="0">Tất cả danh mục</option>
-									    <option value="557">- Ẩm thực</option>
-									    <option value="579">- Spa &amp; Làm đẹp</option>
-									    <option value="555">- Giải trí</option>
-									    <option value="581">- Du Lịch</option>
-									    <option value="571">- Sản Phẩm</option>
-									    <option value="593">- Thời Trang &amp; Phụ Kiện</option>
+										<option value="557">- Ẩm thực</option>
+										<option value="579">- Spa &apm; Làm đẹp</option>
+										<option value="555">- Giải trí</option>
+										<option value="581">- Du Lịch</option>
+										<option value="571">- Sản Phẩm</option>
+										<option value="593">- Thời Trang &apm; Phụ Kiện</option>
 									</select>
 								</div>
 								<div class="search-box_input">
 									<span class="twitter-typeahead">
 										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
 									</span>
-									<button class="btn btn-danger">
-	                                    <i class="hd hd-search"></i>
-	                                    <span class="sr-only">Tìm kiếm</span>
-	                                </button>
+									<button class="btn btn-primary">
+                    <i class="hd hd-search"></i>
+                    <span class="sr-only">Tìm kiếm</span>
+                  </button>
 								</div>
 							</div>
 						</form>
@@ -187,11 +187,11 @@
 			</div>
 		</div><!-- /.header_main -->
 		<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
-	        <div class="container" id="main-menu">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
-		              <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
-		            </button>
+      <div class="container" id="main-menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
+          </button>
 				</div>
 				<div class="collapse navbar-collapse menu" id="menu-navbar-collapse">
 					<ul class="nav navbar-nav navbar-left">
@@ -347,18 +347,21 @@
 									            <div class="order-info order-shippings">
 									                <div class="_payment-method _payment-method6" id="payment_method_6" data-id="6" data-shipping-id="6,11">
 									                    <label>
-									                    <input type="radio" name="payment" value="6" checked="checked">
-									                    <img src="/assets/img/payment-6.png" alt=""> Thanh toán tiền mặt														</label>
+										                    <input type="radio" name="payment" value="6" checked="checked">
+										                    <img src="images/payment-6.png" alt=""> Thanh toán tiền mặt
+										                </label>
 									                </div>
 									                <div class="_payment-method _payment-method13" id="payment_method_13" data-id="13" data-shipping-id="6,11">
 									                    <label>
-									                    <input type="radio" name="payment" value="13">
-									                    <img src="/assets/img/payment-13.png" alt=""> Thẻ ATM ngân hàng nội địa														</label>
+										                    <input type="radio" name="payment" value="13">
+										                    <img src="images/payment-13.png" alt=""> Thẻ ATM ngân hàng nội địa
+										                </label>
 									                </div>
 									                <div class="_payment-method _payment-method14" id="payment_method_14" data-id="14" data-shipping-id="6,11">
 									                    <label>
-									                    <input type="radio" name="payment" value="14">
-									                    <img src="/assets/img/payment-14.png" alt=""> Thẻ Visa/Master Card														</label>
+										                    <input type="radio" name="payment" value="14">
+										                    <img src="images/payment-14.png" alt=""> Thẻ Visa/Master Card
+										                </label>
 									                </div>
 									            </div>
 									        </div>
@@ -369,9 +372,12 @@
 									    </div>
 									</div>
 	                        	</div>
+	                        	<div class="form-note">
+	                                Đặt hàng là bạn đã đồng ý với <a href="/quy-che.html" target="_blank">quy chế</a> sàn giao dịch thương mại điện tử và <a href="/chinh-sach-doi-tra-hang.html" target="_blank">chính sách đổi trả</a> của Hotdeal
+	                            </div>
 	                        </div><!-- /.box_body -->
 	                        <div class="box_footer hidden-xs hidden-sm">
-	                            <a href="/" class="btn btn-back"><i class="hd hd-back"></i> Tiếp tục mua hàng</a>
+	                            <a href="/" class="btn btn-back"><i class="hd hd-back"></i> Quay lại bước 2</a>
 	                            <button id="main-button" class="btn btn-success btn-lg btn-buy-now btn-buy-now-new pull-right" name="submit">
 	                                ĐẶT HÀNG
 	                            </button>
@@ -379,33 +385,94 @@
 						</div><!-- /.block-progress-steps -->
 					</form>
 				</div>
-				<div class="sidebar sidebar-checkout sidebar-checkout-1">
-				    <div class="box">
-				        <div class="box_header">
-				            <h2 class="box_title">THÔNG TIN CHUNG</h2>
-				        </div>
-				        <div class="box_body">
-				            <ul class="order-summary">
-				                <li>
-				                    <span class="k">Tổng sản phẩm</span>
-				                    <span id="order-quantity" class="v">3</span>
-				                </li>
-				                <li>
-				                    <span class="k">Tổng tạm tính</span>
-				                    <span id="order-subtotal" class="v">1,072,000đ</span>
-				                </li>
-				                <li>
-				                    <span class="k">Phí giao hàng (<a target="_blank" href="/chinh-sach-giao-hang.html" title="Chi tiết chính sách giao hàng">?</a>)</span>
-				                    <span class="v"></span>
-				                </li>
-				                <li class="sep"></li>
-				                <li class="total">
-				                    <span class="k">Tổng cộng</span>
-				                    <span id="order-total" class="v">1,072,000 đ</span>
-				                </li>
-				            </ul>
-				        </div>
-				    </div>
+				<div class="sidebar sidebar--checkout sidebar--checkout-3">
+				    <div class="box box-profile">
+					    <div class="box_header">
+					        <h2 class="box_title">Địa chỉ giao hàng</h2>
+					        <div class="box_tools">
+					            <a href="/checkout-step-2" class="btn btn-default btn-sm">Sửa</a>
+					        </div>
+					    </div>
+					    <div class="box_body">
+					        <strong>Phạm Minh Đức</strong>
+					        <div>
+					            783/18/4 Cách Mạng Tháng 8<br>
+					            Phường 6, Tân Bình, Hồ Chí Minh<br>
+					            01675028991						
+					        </div>
+					    </div>
+					</div>
+					<div class="box">
+					    <div class="box_header">
+					        <h2 class="box_title">Thông tin đơn hàng</h2>
+					        <div class="box_tools">
+					            <a href="/checkout-step-1" class="btn btn-default btn-sm">Sửa</a>
+					        </div>
+					    </div>
+					    <div class="box_body">
+					        <div class="order-items">
+					            <div class="order-item" data-id="283248" data-gift="">
+					                <div class="name">
+					                    <span class="quantity">1 x</span>
+					                    <a target="_blank" href="/ho-chi-minh/tu--ke-giay-noi-that-hanh-lang-loi-vao-noi-that-nha-cua-doi-song/ke-de-giay-4-tang-283248.html" title="Kệ Giày 4 Tầng">Kệ Giày 4 Tầng</a>
+					                </div>
+					                <div class="price">
+					                    79,000 đ
+					                </div>
+					            </div>
+					        </div>
+					        <hr>
+					        <div class="gift-code _boxGiftCode">
+					            <div class="box-header">
+					                <h3 class="box-title">
+					                    <i class="fa fa-gift" aria-hidden="true"></i>
+					                    Mã giảm giá / quà tặng
+					                </h3>
+					            </div>
+					            <div class="form-add-gif-tcode ">
+					                <input type="text" class="" name="inputGiftCode" id="inputGiftCode" value="" placeholder="Nhập mã">
+					                <button type="button" class="btnApplyGiftCode">Sử dụng</button>
+					                <p class="notice _noticeGiftCode"></p>
+					            </div>
+					            <div class="form-show-gif-tcode hidden">
+					                Mã đã sử dụng : <button class="btn btn-xs btn-default _btnRemoveGiftCode">xóa</button>
+					            </div>
+					        </div>
+					        <hr>
+					        <ul class="order-summary">
+					            <li>
+					                <span class="k">Tổng sản phẩm</span>
+					                <span class="v">1</span>
+					            </li>
+					            <li>
+					                <span class="k">Tổng tạm tính</span>
+					                <span class="v _sub-total" data-value="79000">79,000 đ</span>
+					                <input type="hidden" id="order_subtotal" value="79000" data-order="subtotal">
+					            </li>
+					            <li>
+					                <span class="k">Giảm giá</span>
+					                <span class="v _discount" data-value="0">0 đ</span>
+					                <input type="hidden" id="order_discount" value="0" data-order="discount">
+					            </li>
+					            <li>
+					                <span class="k">Phí giao hàng (<a target="_blank" href="/chinh-sach-giao-hang.html" title="Chi tiết chính sách giao hàng">?</a>)</span>
+					                <span class="v" id="order_shipping_cost" data-order="shipping_cost_display"><span class="_shipping-cost" data-value="9000">9,000</span> đ</span>
+					            </li>
+					            <li>
+					                <span class="k">Điểm sử dụng</span>
+					                <span class="v"><span class="_order_reward_point" data-value="0">0</span> đ</span>
+					                <input type="hidden" id="order_reward_point" value="0" data-order="reward_point">
+					            </li>
+					            <li class="sep"></li>
+					            <li class="total">
+					                <span class="k">Tổng cộng</span>
+					                <span class="v _total" id="cart_info_total _total" data-value="88000" data-order="total">88,000 đ</span>
+					                <input type="hidden" id="cart_info_order_total" value="88000">
+					                <input type="hidden" id="order_discount" value="0">
+					            </li>
+					        </ul>
+					    </div>
+					</div>
 				</div>
 			</div><!-- /.content-sidebar-2 -->
 		</div>
@@ -489,13 +556,13 @@
 				</div>
 				<div class="col-fter-3">
 					<div class="social">
-						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI HOTDEAL</div>
+						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI Shop</div>
 						<div class="social_items">
-							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="hd hd-facebook"></i></a>
-							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="hd hd-twitter"></i></a>
-							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="hd hd-google-plus"></i></a>
-							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="hd hd-linkedin"></i></a>
-							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="hd hd-youtube"></i></a>
+							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="fa fa-google-plus"></i></a>
+							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="fa fa-youtube"></i></a>
 						</div>
 					</div>
 				</div>
@@ -521,7 +588,7 @@
 	            </p>
 		    </div>
 		</div>
-	</footer>
+	</footer><!-- /.footer -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -531,30 +598,19 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
-	<!-- carousel -->
-	<script src="lib/carousel/owl.carousel.min.js"></script>
-	<!-- sticky -->
+	<!-- ===== carousel ===== -->
+	<script src="lib/owl.carousel/owl.carousel.min.js"></script>
+	<!-- ===== Bxslider ===== -->
+	<script src="lib/bxslider/jquery.bxslider.min.js"></script>
+	<!-- ===== Bootstrap Select ===== -->
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- ===== Countdown ===== -->
+    <script type="text/javascript" src="js/jquery.plugin.js"></script>
+    <script src="lib/countdown/jquery.countdown.js"></script>
+	<!-- ===== Sticky ===== -->
     <script src="lib/sticky/jquery.sticky.js"></script>
-    <!-- Js zoom -->
-    <script src="lib/jquery.zoom.min.js"></script>
-    <!-- Flexslider -->
-    <script src="lib/flexslider/jquery.flexslider-min.js"></script>
-    <!-- Js Common -->
+    <!-- ===== Js Common ===== -->
 	<script src="js/common.js"></script>
-
-	<script>
-		jQuery('.fb-page1').toggleClass('hide');
-			jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
-		jQuery('#closefbchat').click(function(){
-			jQuery('.fb-page1').toggleClass('hide');
-			if(jQuery('.fb-page1').hasClass('hide')){
-				jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
-			}
-			else{
-				jQuery('#closefbchat').text('Tắt Chat').css({'bottom':299});
-			}
-		});
-	</script>
 
 </body>
 </html>
