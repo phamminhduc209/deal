@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Cart</title>
+	<title>Payment</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -299,13 +299,13 @@
 		<div class="container">
 			<div class="block-progress-steps">
 			    <ol class="progress-steps">
-			        <li data-step="1" class="is-active">
+			        <li data-step="1" class="is-complete">
 			            <a href="#">Giỏ hàng</a>
 			        </li>
-			        <li data-step="2" class="">
+			        <li data-step="2" class="is-complete">
 			            <a href="#">Thông Tin Giao Hàng</a>
 			        </li>
-			        <li data-step="3" class=" progress_last">
+			        <li data-step="3" class="is-active progress_last">
 			            <span>Thanh Toán</span>
 			        </li>
 			    </ol>
@@ -313,128 +313,69 @@
 			<div class="content-sidebar-2">
 				<div class="content">
 					<form id="checkout-step-1" class="form form-blocking" action="#" method="post">
-						<div class="box box-no-padding">
+						<div class="box">
 							<div class="box_header">
-	                            <h2 class="box_title">Thông tin sản phẩm</h2>
-	                        </div><!-- /.block-progress-steps -->
+	                            <h2 class="box_title">Thanh toán và Vận chuyển</h2>
+	                        </div><!-- /.box_header -->
 	                        <div class="box_body">
-	                        	<table class="table table-listing table-checkout">
-	                        		<thead>
-		                                <tr>
-		                                    <th class="items0count" colspan="2">Sản phẩm trong giỏ hàng: <span class="badge">2</span></th>
-		                                    <th width="16%">Đơn giá</th>
-		                                    <th width="16%">Số lượng</th>
-		                                    <!-- <th width="16%">Giảm giá</th> -->
-		                                    <th width="16%">Thành tiền</th>
-		                                    <th class="action" width="1%">&nbsp;</th>
-		                                </tr>
-	                                </thead>
-	                                <tbody>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/320442-international-buffet-toi-hai-san-tom-hum-tai-renaissance-riverside-sai-gon-5.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Buffet Tối Hải Sản Tôm Hùm Tại Khách Sạn 5 Sao Renaissance Riverside Sài Gòn - Bao Gồm Nước Uống
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price-list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/338333-buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Buffet Trưa Samurai BBQ - Gần 60 Món BBQ Bò Mỹ, Lẩu, Hải Sản & Sushi - Tặng Buffet Kem
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price--list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/339025-khu-du-lich-dai-nam-ve-cong-truong-dua-moto-moto-nuoc-go-kart-ngua-cho-ve-cong-ve-bien-vuon-thu.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Khu Du Lịch Đại Nam - Vé Cổng Trường Đua (Môtô, Môtô Nước, Go-Kart, Ngựa, Chó) + Vé Cổng + Vé Biển/ Vườn Thú
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price--list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                </tbody>
-	                        	</table>
-	                        </div><!-- /.block-progress-steps -->
+	                        	<div class="row">
+	                        		<div>
+	                        			<div class="col-md-6">
+		                        			<h5>HÌNH THỨC GIAO HÀNG</h5>
+		                        			<div class="order-info order-shippings">
+											    <div class="_shipping-method _shipping-method6 _shipping-method-default">
+											        <label>
+												        <input type="radio" name="shipping" value="6" checked="checked">
+												        <input type="hidden" id="shipping_cost_6" value="9000">
+												        <img src="images/shipping-6.png" alt=""> Giao Hàng Tận Nơi&nbsp;-&nbsp;9,000đ
+											    	</label>
+											        <label class="notice">Miễn phí <label class="required">giao hàng</label> tại Tân Bình cho đơn hàng từ 150,000 đ trở lên.</label>
+											    </div>
+											</div>
+		                        		</div>
+		                        		<div class="_shipping-note col-md-6 form-group form-group-note box-not-dh ">
+										    <label for="note" class="control-label" style="font-size: 14px;color: #666;">Ghi chú cho bên giao hàng</label>
+										    <div>
+										        <textarea style="resize: none; margin-top: 10px;" rows="4" cols="55" class="form-control" id="note" name="note" placeholder="Ghi chú cho bên giao hàng"></textarea>
+										    </div>
+										</div>
+	                        		</div>
+	                        		<div class="col-md-12">
+									    <div class="row">
+									        <div class="col-md-6">
+									            <h5>HÌNH THỨC THANH TOÁN</h5>
+									            <div class="order-info order-shippings">
+									                <div class="_payment-method _payment-method6" id="payment_method_6" data-id="6" data-shipping-id="6,11">
+									                    <label>
+									                    <input type="radio" name="payment" value="6" checked="checked">
+									                    <img src="/assets/img/payment-6.png" alt=""> Thanh toán tiền mặt														</label>
+									                </div>
+									                <div class="_payment-method _payment-method13" id="payment_method_13" data-id="13" data-shipping-id="6,11">
+									                    <label>
+									                    <input type="radio" name="payment" value="13">
+									                    <img src="/assets/img/payment-13.png" alt=""> Thẻ ATM ngân hàng nội địa														</label>
+									                </div>
+									                <div class="_payment-method _payment-method14" id="payment_method_14" data-id="14" data-shipping-id="6,11">
+									                    <label>
+									                    <input type="radio" name="payment" value="14">
+									                    <img src="/assets/img/payment-14.png" alt=""> Thẻ Visa/Master Card														</label>
+									                </div>
+									            </div>
+									        </div>
+									        <div class="col-md-6 box-diemthuong">
+									            <div class="row">
+									            </div>
+									        </div>
+									    </div>
+									</div>
+	                        	</div>
+	                        </div><!-- /.box_body -->
 	                        <div class="box_footer hidden-xs hidden-sm">
 	                            <a href="/" class="btn btn-back"><i class="hd hd-back"></i> Tiếp tục mua hàng</a>
 	                            <button id="main-button" class="btn btn-success btn-lg btn-buy-now btn-buy-now-new pull-right" name="submit">
 	                                ĐẶT HÀNG
 	                            </button>
-	                        </div>
+	                        </div><!-- /.box_footer -->
 						</div><!-- /.block-progress-steps -->
 					</form>
 				</div>
@@ -601,6 +542,19 @@
     <!-- Js Common -->
 	<script src="js/common.js"></script>
 
+	<script>
+		jQuery('.fb-page1').toggleClass('hide');
+			jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+		jQuery('#closefbchat').click(function(){
+			jQuery('.fb-page1').toggleClass('hide');
+			if(jQuery('.fb-page1').hasClass('hide')){
+				jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+			}
+			else{
+				jQuery('#closefbchat').text('Tắt Chat').css({'bottom':299});
+			}
+		});
+	</script>
 
 </body>
 </html>

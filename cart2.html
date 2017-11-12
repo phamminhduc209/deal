@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Cart</title>
+	<title>Cart Infomation</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -299,10 +299,10 @@
 		<div class="container">
 			<div class="block-progress-steps">
 			    <ol class="progress-steps">
-			        <li data-step="1" class="is-active">
+			        <li data-step="1" class="is-complete">
 			            <a href="#">Giỏ hàng</a>
 			        </li>
-			        <li data-step="2" class="">
+			        <li data-step="2" class="is-active">
 			            <a href="#">Thông Tin Giao Hàng</a>
 			        </li>
 			        <li data-step="3" class=" progress_last">
@@ -313,121 +313,128 @@
 			<div class="content-sidebar-2">
 				<div class="content">
 					<form id="checkout-step-1" class="form form-blocking" action="#" method="post">
-						<div class="box box-no-padding">
+						<div class="box">
 							<div class="box_header">
-	                            <h2 class="box_title">Thông tin sản phẩm</h2>
+	                            <h2 class="box_title">Địa chỉ giao hàng</h2>
 	                        </div><!-- /.block-progress-steps -->
-	                        <div class="box_body">
-	                        	<table class="table table-listing table-checkout">
-	                        		<thead>
-		                                <tr>
-		                                    <th class="items0count" colspan="2">Sản phẩm trong giỏ hàng: <span class="badge">2</span></th>
-		                                    <th width="16%">Đơn giá</th>
-		                                    <th width="16%">Số lượng</th>
-		                                    <!-- <th width="16%">Giảm giá</th> -->
-		                                    <th width="16%">Thành tiền</th>
-		                                    <th class="action" width="1%">&nbsp;</th>
-		                                </tr>
-	                                </thead>
-	                                <tbody>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/320442-international-buffet-toi-hai-san-tom-hum-tai-renaissance-riverside-sai-gon-5.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Buffet Tối Hải Sản Tôm Hùm Tại Khách Sạn 5 Sao Renaissance Riverside Sài Gòn - Bao Gồm Nước Uống
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price-list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/338333-buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Buffet Trưa Samurai BBQ - Gần 60 Món BBQ Bò Mỹ, Lẩu, Hải Sản & Sushi - Tặng Buffet Kem
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price--list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                	<tr>
-	                                		<td class="image">
-                                                <img class="pull-left" src="images/cart/339025-khu-du-lich-dai-nam-ve-cong-truong-dua-moto-moto-nuoc-go-kart-ngua-cho-ve-cong-ve-bien-vuon-thu.jpg">
-                                            </td>
-                                            <td class="name">
-                                                Khu Du Lịch Đại Nam - Vé Cổng Trường Đua (Môtô, Môtô Nước, Go-Kart, Ngựa, Chó) + Vé Cổng + Vé Biển/ Vườn Thú
-                                                <div style="color: #999;">Mã SP : 320442</div>
-                                            </td>
-                                            <td class="unit">
-											    <label>743,000 đ</label>
-											    <span class="product_price--list-price price price-list-price">
-										        	<span class="price_value"></span><span class="price_symbol">đ</span>
-										        </span>
-											</td>
-											<td class="quantity">
-											    <select class="quantity_modifier quantity-modifier quantity-modifier-select " name="" id="">
-											        <option value="1" selected="selected">1</option>
-											        <option value="2">2</option>
-											        <option value="3">3</option>
-											        <option value="4">4</option>
-											        <option value="5">5</option>
-											        <option value="6">6</option>
-											        <option value="7">7</option>
-											        <option value="8">8</option>
-											        <option value="9">9</option>
-											        <option value="10">10</option>
-											    </select>
-											</td>
-											<!-- <td class="discount"> đ</td> -->
-											<td id="" class="total">743,000đ</td>
-											<td class="action"><a class="btn btn-xs" href="#"><i class="fa fa-trash"></i></a></td>
-	                                	</tr>
-	                                </tbody>
-	                        	</table>
+	                        <div class="box_body address-container">
+	                        	<div class="row">
+		                            <div class="col-md-12">
+		                                <span class="empty-address">Bạn chưa có địa chỉ giao hàng.</span>
+		                                <span class="not-empty-address">Bạn muốn giao hàng đến địa chỉ khác?</span>
+		                                <a class="btn-add-address" href="#">Thêm địa chỉ giao hàng mới</a>
+		                            </div>
+		                        </div><!-- /.col-md-12 -->
+		                        <div class="form form-blocking form-general check-out-step-2">
+		                        	<div class="address-edit editable-section editing">
+		                        		<div class="row form">
+		                        			<div class="col-md-6">
+		                        				<div class="form-group form-group-lg has-feedback">
+		                        					<label for="name_0" class="control-label">Họ tên</label>
+		                        					<div>
+									                    <input type="text" class="form-control" name="" placeholder="Họ tên người nhận" value="">
+									                    <i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+									                </div>
+									                <small class="help-block" style="display: none;">Vui lòng nhập Họ tên</small>
+									                <small class="help-block" style="display: none;">Họ tên nhập tối đa 60 ký tự</small>
+		                        				</div>
+		                        				<div class="form-group form-group-lg has-feedback">
+									                <label for="address_0" class="control-label">Địa chỉ</label>
+									                <div>
+									                    <input type="text" class="form-control" name="" placeholder="Số nhà" value="">
+									                    <i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+									                </div>
+									            	<small class="help-block" style="display: none;">Vui lòng nhập Địa chỉ</small>
+									            	<small class="help-block" style="display: none;">Địa chỉ nhập tối đa 200 ký tự</small>
+									            </div>
+									            <div class="form-group form-group-lg has-feedback">
+									                <label for="street_0" class="control-label">Đường</label>
+									                <div>
+									                    <input type="text" class="form-control" name="" placeholder="Ví dụ: Lữ gia" value="">
+									                    <i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+									                </div>
+									            	<small class="help-block" data-fv-validator="notEmpty" style="display: none;">Vui lòng nhập Tên đường</small>
+									            	<small class="help-block" style="display: none;">Đường nhập tối đa 200 ký tự</small>
+									            </div>
+									            <div class="form-group form-group-lg has-feedback" style="display: none;">
+									                <label for="floor_0" class="control-label">Lầu</label>
+									                <div>
+									                    <input type="text" class="form-control" placeholder="Lầu / Tầng / Lô / ..." value="">
+									                    <i class="form-control-feedback" style="display: none;"></i>
+									                </div>
+									            	<small class="help-block" style="display: none;">Lầu nhập tối đa 200 ký tự</small>
+									        	</div>
+									        	<div class="form-group form-group-lg">
+									                <label for="address_type_0" class="control-label">Loại địa chỉ</label>
+									                <div class="radio-list">
+									                    <select id="address_type_0" name="" class="form-control">
+									                        <option value="H">Nhà riêng</option>
+									                        <option value="C">Nơi làm việc</option>
+									                    </select>
+									                </div>
+									            </div>
+		                        			</div><!-- /.col-md-6 -->
+		                        			<div class="col-md-6">
+		                        				<div class="form-group form-group-lg has-feedback">
+		                        					<label for="phone_0" class="control-label">Số điện thoại</label>
+		                        					<div>
+									                    <input type="text" class="form-control" name="" placeholder="Số điện thoại liên hệ" value="">
+									                    <i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+									                </div>
+									                <small class="help-block" style="display: none;">Vui lòng nhập Số điện thoại</small>
+									                <small class="help-block" style="display: none;">Số điện thoại chỉ được nhập số và từ 10 đến 11 ký tự</small>
+		                        				</div>
+		                        				<div class="form-group form-group-lg has-feedback">
+		                        					<label for="city_0" class="control-label">Thành phố</label>
+		                        					<div>
+		                        						<select name="" class="city form-control">
+		                        							<option value="">Chọn Thành phố</option>
+		                        							<option value="437">Hồ Chí Minh</option>
+		                        							<option value="440">Hà Nội</option>
+		                        							<option value="417">An Giang</option>
+		                        						</select>
+		                        						<i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+		                        					</div>
+		                        				</div>
+		                        				<div class="form-group form-group-lg has-feedback">
+		                        					<label for="district_0" class="control-label">Quận / Huyện</label>
+		                        					<div>
+		                        						<select name="" class="district form-control">
+		                        							<option value="">Chọn Quận / Huyện</option>
+		                        							<option selected="" value="493">Tân Bình</option>
+		                        						</select>
+		                        						<i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+		                        					</div>
+		                        				</div>
+		                        				<div class="form-group form-group-lg has-feedback">
+												    <label for="ward_0" class="control-label">Phường / Xã</label>
+												    <div>
+												        <select id="ward_0" name="" class="ward form-control">
+												            <option value="">Chọn Phường / Xã</option>
+												        </select>
+												        <i class="form-control-feedback" style="display: none; pointer-events: none;"></i>
+												    </div>
+												    <small class="help-block" style="display: none;">Vui lòng chọn Phường Xã</small>
+												</div>
+		                        			</div><!-- /.col-md-6 -->
+		                        			<div class="col-md-12" style="margin-bottom: 5px;">
+									            Bạn có thể nhận hàng ở địa chỉ này vào thứ 7 không?
+									        </div><!-- /.col-md-12 -->
+									        <div class="form-group form-group-lg col-md-6">
+									            <select id="delivery_on_weekend_0" name="" class="form-control">
+									                <option value="Y">Có thể</option>
+									                <option value="N">Không thể</option>
+									            </select>
+									        </div>
+		                        		</div><!-- /.row -->
+		                        		<div class="row">
+									        <div class="col-md-12">
+									            <button type="button" class="btn btn-success btn-save button-save">Cập nhật</button>
+									            <button type="button" class="btn btn-default btn-cancel button-cancel">Hủy</button>
+									        </div>
+									    </div><!-- /.row -->
+		                        	</div>
+		                        </div>
 	                        </div><!-- /.block-progress-steps -->
 	                        <div class="box_footer hidden-xs hidden-sm">
 	                            <a href="/" class="btn btn-back"><i class="hd hd-back"></i> Tiếp tục mua hàng</a>
@@ -438,29 +445,51 @@
 						</div><!-- /.block-progress-steps -->
 					</form>
 				</div>
-				<div class="sidebar sidebar-checkout sidebar-checkout-1">
+				<div class="sidebar sidebar-checkout sidebar-checkout-2">
 				    <div class="box">
 				        <div class="box_header">
-				            <h2 class="box_title">THÔNG TIN CHUNG</h2>
+				            <h2 class="box_title">Thông tin đơn hàng</h2>
+				            <div class="box_tools">
+				            </div>
 				        </div>
 				        <div class="box_body">
+				            <div class="order-items">
+				                <div class="order-item">
+				                    <div class="name">
+				                        <span class="quantity">1 x</span>
+				                        <a target="_blank" href="#" title="Kệ Giày 4 Tầng">Kệ Giày 4 Tầng</a>
+				                    </div>
+				                    <div class="price">
+				                        79,000 đ
+				                    </div>
+				                </div>
+				            </div>
+				            <hr>
 				            <ul class="order-summary">
 				                <li>
 				                    <span class="k">Tổng sản phẩm</span>
-				                    <span id="order-quantity" class="v">3</span>
+				                    <span class="v">1</span>
 				                </li>
 				                <li>
 				                    <span class="k">Tổng tạm tính</span>
-				                    <span id="order-subtotal" class="v">1,072,000đ</span>
+				                    <span class="v _sub-total" data-value="79000">79,000 đ</span>
+				                </li>
+				                <li>
+				                    <span class="k">Giảm giá</span>
+				                    <span class="v _discount" data-value="0">0 đ</span>
 				                </li>
 				                <li>
 				                    <span class="k">Phí giao hàng (<a target="_blank" href="/chinh-sach-giao-hang.html" title="Chi tiết chính sách giao hàng">?</a>)</span>
-				                    <span class="v"></span>
+				                    <span class="v" id="order_shipping_cost" data-order="shipping_cost_display"><span class="_shipping-cost" data-value="0"></span> đ</span>
+				                </li>
+				                <li>
+				                    <span class="k">Điểm sử dụng</span>
+				                    <span class="v"><span class="_order_reward_point" data-value="0">0</span> đ</span>
 				                </li>
 				                <li class="sep"></li>
 				                <li class="total">
 				                    <span class="k">Tổng cộng</span>
-				                    <span id="order-total" class="v">1,072,000 đ</span>
+				                    <span class="v _total" id="cart_info_total _total" data-value="79000.00" data-order="total">79,000 đ</span>
 				                </li>
 				            </ul>
 				        </div>
@@ -600,7 +629,6 @@
     <script src="lib/flexslider/jquery.flexslider-min.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
-
 
 </body>
 </html>

@@ -28,7 +28,7 @@
 */
 @media (min-width: 1200px) {
   .container {
-    width: 1150px;
+    width: 1200px;
   }
   .sticky-wrapper.is-sticky .fixed-res {
   	top: 55px !important;
