@@ -1808,7 +1808,7 @@ form.form-general {
 .flex-direction-nav a.flex-next:before {
   content: '\f105';
 }
-.product-details .product_gallery #carouse li {
+.product-details .product_gallery #carousel.flexslider .slides > li {
   position: relative;
 }
 .product-details .product_gallery #carousel .flex-active-slide:after {
