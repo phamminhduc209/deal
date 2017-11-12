@@ -310,7 +310,41 @@
 			<div class="product product-details clearfix">
 				<div class="product_gallery gallery ">
 					<div class="gallery_image">
-						aa
+						<div class="block block-slide-detail">
+							<!-- Place somewhere in the <body> of your page -->
+							<div id="slider" class="flexslider">
+								<ul class="slides slides-large">
+									<li><img src="images/detail/large/1.jpg" /></li>
+									<li><img src="images/detail/large/2.jpg" /></li>
+									<li><img src="images/detail/large/3.jpg" /></li>
+									<li><img src="images/detail/large/4.jpg" /></li>
+									<li><img src="images/detail/large/5.jpg" /></li>
+									<li><img src="images/detail/large/6.jpg" /></li>
+									<li><img src="images/detail/large/7.jpg" /></li>
+									<li><img src="images/detail/large/1.jpg" /></li>
+									<li><img src="images/detail/large/2.jpg" /></li>
+									<li><img src="images/detail/large/3.jpg" /></li>
+									<li><img src="images/detail/large/4.jpg" /></li>
+									<li><img src="images/detail/large/5.jpg" /></li>
+								</ul>
+							</div>
+							<div id="carousel" class="flexslider">
+								<ul class="slides">
+									<li><img src="images/detail/thumb/1.jpg" /></li>
+									<li><img src="images/detail/thumb/2.jpg" /></li>
+									<li><img src="images/detail/thumb/3.jpg" /></li>
+									<li><img src="images/detail/thumb/4.jpg" /></li>
+									<li><img src="images/detail/thumb/5.jpg" /></li>
+									<li><img src="images/detail/thumb/6.jpg" /></li>
+									<li><img src="images/detail/thumb/7.jpg" /></li>
+									<li><img src="images/detail/thumb/1.jpg" /></li>
+									<li><img src="images/detail/thumb/2.jpg" /></li>
+									<li><img src="images/detail/thumb/3.jpg" /></li>
+									<li><img src="images/detail/thumb/4.jpg" /></li>
+									<li><img src="images/detail/thumb/5.jpg" /></li>
+								</ul>
+							</div>
+						</div><!-- /block-slide-detail -->
 					</div>
 				</div><!-- /.gallery_image -->
 				<div class="product_details">
@@ -674,6 +708,8 @@
 	<script src="lib/owl.carousel/owl.carousel.min.js"></script>
 	<!-- ===== Bxslider ===== -->
 	<script src="lib/bxslider/jquery.bxslider.min.js"></script>
+	<!-- Flexslider -->
+    <script src="lib/flexslider/jquery.flexslider-min.js"></script>
 	<!-- ===== Select ===== -->
     <script src="lib/select2/js/select2.min.js"></script>
     <!-- ===== Countdown ===== -->
@@ -686,34 +722,36 @@
     <!-- ===== Js Common ===== -->
 	<script src="js/common.js"></script>
 
-	<script>
+    <script>
+		$(window).load(function() {
+			// The slider being synced must be initialized first
+			$('#carousel').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: true,
+				slideshow: false,
+				itemWidth: 50,
+				itemMargin: 25,
+				nextText: "",
+				prevText: "",
+				asNavFor: '#slider'
+			});
 
-        (function($) {
+			$('#slider').flexslider({
+				animation: "fade",
+				controlNav: false,
+				directionNav: false,
+				animationLoop: false,
+				slideshow: false,
+				animationSpeed: 500,
+				sync: "#carousel"
+			});
 
-            "use strict";
-
-            /*  [ Filter by price ]
-
-            - - - - - - - - - - - - - - - - - - - - */
-
-            $('#slider-range').slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [0, 250],
-                slide: function (event, ui) {
-                    $('#amount-left').text('$' + ui.values[0] );
-                    $('#amount-right').text('$' + ui.values[1] );
-                }
+			$('.slides-large li').each(function () {
+                $(this).zoom();
             });
-
-            $('#amount-left').text('$' + $('#slider-range').slider('values', 0));
-            $('#amount-right').text('$' + $('#slider-range').slider('values', 1));
-            
-
-        })(jQuery);
-
-    </script>
+		});
+	</script>
 
 </body>
 </html>

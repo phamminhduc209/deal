@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html dir="ltr" lang="vi-VN" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="vi-VN" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="vi-VN" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="vi-VN" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if IE 10 ]><html dir="ltr" lang="vi-VN" class="no-js ie ie10 lte10"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hình Thức Thanh Toán</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow" />
+	<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+
+	<!-- ===== Style CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- ===== Responsive CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<link href='css/animations-ie-fix.css' rel='stylesheet'>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="billing">
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header class="header">
+		<div class="block-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 block-logo">
+						<a href="index.html" title="Logo">
+							<img src="images/logo.png" alt="Logo Housland">
+						</a>
+					</div><!-- /block-logo -->
+					<div class="col-sm-8 col-xs-12 block-info">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="item hotline">
+									<i class="fa fa-phone"></i>
+									<p>
+										<span class="title">Hotline</span>
+										<span class="info">0909 58 57 49</span>
+									</p>
+								</div>	
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="item time">
+									<i class="fa fa-clock-o"></i>
+									<p>
+										<span class="title">Thời gian làm việc</span>
+										<span class="info">08:00 - 17:00</span>
+									</p>
+								</div>	
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="item email">
+									<i class="fa fa-envelope-o"></i>
+									<p>
+										<span class="title">Email</span>
+										<span class="info">tungocsang88@gmail.com</span>
+									</p>
+								</div>	
+							</div>
+						</div>
+					</div><!-- /bblock-info -->
+				</div>
+			</div>
+			<div class="block-search">
+				<form action="#" method="get">
+					<button type="submit" class="btn icon"><i class="fa fa-search"></i></button>
+					<div class="search-inner">
+						<input type="text" name="" class="" value="" placeholder="Search ...">
+					</div>
+				</form>
+			</div>
+			<div class="block-fb">
+				<div class="icon">
+					<i class="fa fa-facebook"></i>
+				</div>
+				<div class="fb-inner">
+					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="300px" data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+				</div>
+			</div>
+		</div><!-- /block-header-bottom -->
+		<div class="menu">
+			<div class="nav-toogle">
+				<i class="fa"></i>
+			</div>
+			<div class="block-cart-mb">
+				<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+					<i class="fa fa-shopping-cart"></i>
+					<span>10</span>
+				</a>
+			</div>
+			<nav class="menu-top">
+				<div class="container">
+					<ul class="nav-menu">
+						<li class="level0 active"><a href="index.html" title="Trang Chủ">Trang Chủ</a></li>
+						<li class="level0"><a href="about.html" title="Giới Thiệu">Giới Thiệu</a></li>
+						<li class="level0 parent">
+							<a href="product.html" title="Sản Phẩm">SẢN PHẨM</a>
+							<ul class="level0 submenu">
+								<li class="level1"><a href="product.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
+								<li class="level1"><a href="product.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
+								<li class="level1 parent">
+									<a href="product.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a>
+									<ul class="level1 submenu">
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 04">Tên menu sản phẩm quần jeans số 04</a></li>
+									</ul>
+								</li>
+								<li class="level1"><a href="product.html" title="">Tên menu sản phẩm quần jeans số 04</a></li>
+							</ul>
+						</li>
+						<li class="level0"><a href="sales.html" title="Thi Công">KHUYẾN MÃI</a></li>
+						<li class="level0"><a href="recruitment.html" title="Nội Thất">TUYỂN DỤNG</a></li>
+						<li class="level0"><a href="contact.html" title="Liên Hệ">Liên Hệ</a></li>
+						<li class="cart">
+							<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+								<i class="fa fa-shopping-cart"></i>
+								<span>Giỏ hàng</span><br>
+								<span>0 Sản phẩm</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav><!-- /menu-top -->
+		</div><!-- /menu -->
+	</header><!-- /header -->
+
+	<div class="wrapper">
+		<div class="block block-breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Giỏ hàng</a></li>
+					<li class="active">Thông tin thanh toán</li>
+				</ul>
+			</div>
+		</div><!-- /block-breadcrumb -->
+		<div class="block block-two-col container">
+			<div class="block-page-common">
+				<div class="block block-title">
+					<h2>
+						<i class="fa fa-cart-arrow-down"></i>
+						THÔNG TIN THANH TOÁN
+					</h2>
+				</div>
+			</div><!-- /block-page-common -->
+			<div class="row">
+				<div class="col-sm-8 col-xs-12 block-col-left">
+					<div class="block-billing">
+						<div class="block-title">
+							THÔNG TIN ĐẶT HÀNG
+						</div>
+						<div class="block-content">
+							<form action="billing-infomation_submit" method="get" class="form-billing">
+								<div class="form-group">
+									<label class="choose-another"><input type="radio" class="radio-cus"> Chuyển khoản ngân hàng</label>
+								</div>
+								<div class="form-group">
+									<div class="content">
+									<div class="form-group">
+										<div class="thumb">
+											<img src="images/payments/VIB.jpg" alt="">
+										</div>
+										<div class="des">
+											<p class="title">Ngân hàng thươnag mại cổ phần Á Châu - Chi nhánh Thủ Đức</p>
+											<p class="info">
+												It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+											</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="thumb">
+											<img src="images/payments/TCB.jpg" alt="">
+										</div>
+										<div class="des">
+											<p class="title">Ngân hàng thươnag mại cổ phần Á Châu - Chi nhánh Thủ Đức</p>
+											<p class="info">
+												It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+											</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="thumb">
+											<img src="images/payments/ACB.jpg" alt="">
+										</div>
+										<div class="des">
+											<p class="title">Ngân hàng thươnag mại cổ phần Á Châu - Chi nhánh Thủ Đức</p>
+											<p class="info">
+												It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+											</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="thumb">
+											<img src="images/payments/VCB.jpg" alt="">
+										</div>
+										<div class="des">
+											<p class="title">Ngân hàng thươnag mại cổ phần Á Châu - Chi nhánh Thủ Đức</p>
+											<p class="info">
+												It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+											</p>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="choose-another"><input type="radio" class="radio-cus"> Thanh toán bằng tiền mặt</label>
+								</div>
+								<div class="form-group text-center">
+									<a href="#" title="Quay Lại" class="btn btn-default"><i class="fa fa-angle-left"></i> Quay Lại</a>
+									<button onclick="return false;" title="Quay Lại" class="btn btn-danger" data-toggle="modal" data-target="#Confirm">Đặt hàng <i class="fa fa-angle-right"></i></button>
+								</div>
+							</form>
+						</div>
+					</div><!-- /block-billing -->
+				</div><!-- /block-col-left -->
+				<div class="col-sm-4 col-xs-12 block-col-right">
+					<div class="block block-billing-product block-info-address">
+						<div class="block-title">
+							ĐỊA CHỈ GIAO HÀNG / THANH TOÁN
+						</div>
+						<div class="block-content">
+							<p>
+								<span class="title">Họ và tên:</span>
+								<span class="info">Từ Ngọc Sang</span>
+							</p>
+							<p>
+								<span class="title">Địa chỉ:</span>
+								<span class="info">216 Hoàng Văn Thụ, P.4, Q.Tân Bình</span>
+							</p>
+							<p>
+								<span class="title">Điện thoại di động:</span>
+								<span class="info">0909 58 57 49</span>
+							</p>
+							<p>
+								<span class="title">Email:</span>
+								<span class="info">tungocsang88@gmail.com</span>
+							</p>
+							<p>
+								<span class="title">Ngày đặt hàng:</span>
+								<span class="info">26/06/2017</span>
+							</p>
+						</div>
+					</div>
+					<div class="block-billing-product">
+						<div class="block-title">
+							THÔNG TIN SẢN PHẨM
+						</div>
+						<div class="block-content">
+							<table class="table-billing-product">
+								<thead>
+									<tr>
+										<th style="width: 73%;"><strong>Sản phẩm</strong></th>
+										<th><strong>Tổng cộng</strong></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p class="tb-commom">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</p>
+											<p class="tb-commom">Số lượng: x1</p>
+											<p class="tb-commom">
+												Màu sắc sản phẩm:
+												<span class="tb-img"><img src="images/color/000.jpg" alt=""></span>
+											</p>
+											<p class="tb-commom">Size sản phẩm: <span class="tb-commom1">29</span></p>
+											<p class="tb-commom1">Vòng eo sản phẩm: <span class="tb-commom">56cm</span></p>
+										</td>
+										<td>
+											<strong class="text-right">648.000đ</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="tb-commom">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</p>
+											<p class="tb-commom">Số lượng: x1</p>
+											<p class="tb-commom">
+												Màu sắc sản phẩm:
+												<span class="tb-img"><img src="images/color/000.jpg" alt=""></span>
+											</p>
+											<p class="tb-commom">Size sản phẩm: <span class="tb-commom1">29</span></p>
+											<p class="tb-commom1">Vòng eo sản phẩm: <span class="tb-commom">56cm</span></p>
+										</td>
+										<td>
+											<strong class="text-right">648.000đ</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Tổng phụ</strong>
+										</td>
+										<td>
+											<p class="text-right">1.296.000đ</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Tổng cộng</strong>
+										</td>
+										<td>
+											<p class="cl-red text-right">1.296.000đ</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="text-center">
+											(Chưa bao gồm phí vận chuyển nếu có)
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!-- /block-col-right -->
+			</div>
+		</div><!-- /block_big-title -->
+	</div><!-- /wrapper-->
+
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 ft-info">
+						<address>
+							<p><strong>CÔNG TY PHÂN PHỐI QUẦN JEANS CAO CẤP</strong></p>
+							<p>Địa chỉ: 788 - 790 Lạc Long Quân, phường 9, quận Tân Bình, thành phố Hồ Chí Minh</p>
+							<p>Điện thoại: 08 86 02 440</p>
+							<p>Di động: 0918 306 666 - 0918 207 777</p>
+							<p>Email: <a href="mailto:amphucjean@yahoo.com.vn">amphucjean@yahoo.com.vn</a></p>
+							<p>Website: <a href="#">www.namphucjean.com</a></p>
+						</address>
+						<div class="block-statistics">
+							<p><span>Truy cập hôm nay:</span> 1.234</p>
+							<p><span>Truy cập hôm qua:</span> 875</p>
+							<p><span>Truy cập trong tuần:</span> 8.765</p>
+							<p><span>Tổng lượt truy cập:</span> 12.762</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12 ft-map">
+						<object data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3340475200366!2d106.66105631546826!3d10.785706992315221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ece0a7bad71%3A0x5fded1d58e5866d9!2zMTA0IELhuq9jIEjhuqNpLCBwaMaw4budbmcgNywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1503933127779"></object>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bot">
+			<div class="container">
+				<p class="text-center"><i>2017 Designed by iWeb247.vn</i></p>
+				<div class="fbchatbox hidden-xs">
+					<div class="fb-page fb-page1" data-href="https://www.facebook.com/www.icare.center" data-small-header="true" data-adapt-container-width="false" data-height="300" data-width="300" data-hide-cover="true" data-show-facepile="true" data-show-posts="false" data-tabs="messages"><div class="fb-xfbml-parse-ignore"></div></div>
+					<span id="closefbchat" style="white-space: nowrap; position: absolute; right: 2px; bottom: 0px; padding: 5px 25px; background: rgb(199, 24, 25); color: rgb(255, 255, 255); cursor: pointer; border-radius: 4px 4px 0 0;">Tắt Chat</span>
+				</div>
+			</div>
+		</div><!-- /footer-bot-->
+		<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
+	  		<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</a><!-- return to top -->
+	</footer><!-- footer -->
+
+	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
+  		<i class="fa fa-angle-up" aria-hidden="true"></i>
+	</a><!-- return to top -->
+
+	<!-- Modal Cart -->
+	<div class="modal fade" id="Cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times-circle"></i>
+				</button>
+				<div class="shopcart-ct">
+					<div class="modal-body">
+						<form action="#" method="POST" id="frm_order_items">
+							<div class="table cart-tbl">
+								<div class="table-row thead">
+									<div class="table-cell product-col t-c">Sản phẩm</div>
+									<div class="table-cell numb-col t-c">Số lượng</div>
+									<div class="table-cell total-col t-c">Thành tiền</div>
+								</div><!-- table-row thead -->
+								<div class="tr-wrap">
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+								</div><!-- tr-wrap -->
+							</div><!-- table cart-tbl -->
+							<div class="block-btn">
+								<a href="#" title="Xóa tất cả" class="btn btn-default">Xóa tất cả <i class="fa fa-trash-o"></i></a>
+								<a href="#" title="Xóa tất cả" class="btn btn-danger">Thanh toán <i class="fa fa-angle-right"></i></a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Confirm -->
+	<div class="modal fade" id="Confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times-circle"></i>
+				</button>
+				<div class="modal-header">
+					ĐƠN HÀNG CỦA BẠN ĐÃ ĐẶT THÀNH CÔNG
+				</div>
+				<div class="modal-body">
+					<p>
+						<strong>Cảm ơn quý khách đã mua hàng !</strong> Chúng tôi liên hệ xác nhận đến số điện thoại của quý khách và sẽ giao hàng đến cho quý khách trong thời gian từ 2-3 ngày sau khi xác nhận.
+					</p>
+					<p>
+						<strong>Chân thành cảm ơn quý khách.</strong>
+					</p>
+					<div class="text-right">
+						<a href="index.html" title="Trở về trang chủ" class="btn btn-danger"> Trở về trang chủ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== JS ===== -->
+	<script src="js/jquery.min.js"></script>
+	<!-- ===== JS Bootstrap ===== -->
+	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	<!-- carousel -->
+	<script src="lib/carousel/owl.carousel.min.js"></script>
+	<!-- sticky -->
+    <script src="lib/sticky/jquery.sticky.js"></script>
+    <!-- Js zoom -->
+    <script src="lib/jquery.zoom.min.js"></script>
+    <!-- Flexslider -->
+    <script src="lib/flexslider/jquery.flexslider-min.js"></script>
+    <!-- Js Common -->
+	<script src="js/common.js"></script>
+
+	<script>
+		jQuery('.fb-page1').toggleClass('hide');
+			jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+		jQuery('#closefbchat').click(function(){
+			jQuery('.fb-page1').toggleClass('hide');
+			if(jQuery('.fb-page1').hasClass('hide')){
+				jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+			}
+			else{
+				jQuery('#closefbchat').text('Tắt Chat').css({'bottom':299});
+			}
+		});
+	</script>
+
+</body>
+</html>
