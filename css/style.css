@@ -1017,8 +1017,8 @@ form.form-general {
   margin-top: 30px;
 }
 .box-products .box-product-head {
-  height: 36px;
-  border-bottom: 1px solid #ccc;
+  height: 37px;
+  /* border-bottom: 1px solid #ccc; */
   background: #fff;
 }
 .box-products .box-product-head .box-title {
@@ -1028,11 +1028,17 @@ form.form-general {
   padding-bottom: 5px;
   font-size: 18px;
   padding-left: 10px;
-  padding-right: 5px;
-  line-height: 36px;
+  padding-right: 10px;
+  line-height: 37px;
   padding-top: 8px;
 }
+.box-products .box-product-head .box-title i {
+  margin-right: 5px;
+}
 /* cosmetic */
+.box-products.cosmetic .box-product-head {
+  border-top: 1px solid #d66784;
+}
 .box-products.cosmetic .box-title {
   border-color: #d66784;
   background: #d66784;
@@ -1044,6 +1050,9 @@ form.form-general {
   color: #d66784;
 }
 /* food */
+.box-products.food .box-product-head {
+  border-top: 1px solid #71be0f;
+}
 .box-products.food .box-title {
   border-color: #71be0f;
   background: #71be0f;
@@ -1055,6 +1064,9 @@ form.form-general {
   color: #71be0f;
 }
 /* family */
+.box-products.family .box-product-head {
+  border-top: 1px solid #F77807;
+}
 .box-products.family .box-title {
   border-color: #F77807;
   background: #F77807;
@@ -1066,6 +1078,9 @@ form.form-general {
   color: #F77807;
 }
 /* gift */
+.box-products.gift .box-product-head {
+  border-top: 1px solid #1cb1a8;
+}
 .box-products.gift .box-title {
   border-color: #1cb1a8;
   background: #1cb1a8;
@@ -1092,8 +1107,8 @@ form.form-general {
   line-height: normal;
   background: url(../images/kak3.png) no-repeat center right;
   float: left;
-  height: 36px;
-  line-height: 36px;
+  height: 37px;
+  line-height: 37px;
 }
 .box-products .box-tabs li:last-child>a {
   background: none;
