@@ -849,6 +849,8 @@ form.form-general {
 .products .product {
   cursor: pointer;
   transition: all 0.5s;
+  min-height: 375px;
+  max-height: 375px;
 }
 .products .product:hover {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
@@ -1836,36 +1838,10 @@ form.form-general {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.add-to-cart-buttons .btn {
-  min-width: 140px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  color: #5a5a5a;
-  font-size: 16px;
-  padding: 6px 12px 5px;
-}
-.add-to-cart-buttons .btn-buy-now, .btn-buy-alert {
-  min-width: 160px;
-  border-bottom: 4px solid #487513;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  text-shadow: 0 1px 1px rgba(99, 165, 15, 0.75);
-}
 .add-to-cart-buttons .btn-buy-now-x2 {
   min-width: 240px;
   padding: 5px;
   font-size: 25px;
-}
-.add-to-cart-buttons .btn-add-to-cart {
-  border-color: #71be0f;
-  background-color: #fff;
-  color: #5a8c19;
-  padding: 8px 15px 7px 15px;
-}
-.add-to-cart-buttons .btn + .btn {
-  margin-left: 10px;
 }
 
 .product-well {
@@ -1882,9 +1858,15 @@ form.form-general {
 .product-well .row {
   height: 200px;
   overflow: hidden;
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  transition: height 0.2s;
+  -webkit-transition: height 5s;
+  -moz-transition: height 5s;
+  transition: height 5s;
+}
+.product-well.expanded .row {
+  height: auto;
+  -webkit-transition: height 5s;
+  -moz-transition: height 5s;
+  transition: height 5s;
 }
 .product-well .product-well-title {
   margin: 0 0 10px;
@@ -1905,13 +1887,21 @@ form.form-general {
 .product-well .btn-view-more .less-text {
   display: none;
 }
-.product-well.expanded .more-text {
-  display: none;
+.product-well.expanded .less-text {
+  display: block;
 }
-
 
 .content-sidebar .content {
   margin-right: 2.50847457627119%;
+}
+.content {
+  width: 78%;
+  float: left;
+}
+.sidebar {
+  width: 19.49152542372881%;
+  float: left;
+  position: relative;
 }
 .block-tabs .tab-content {
   padding: 20px 25px;
@@ -1972,7 +1962,7 @@ form.form-general {
   margin: 0 5px 8px 0;
   height: 26px;
   line-height: 26px;
-  background-color: #71be0f;
+  background-color: #0088cc;
   color: #fff;
   font-size: 13px;
   font-weight: 400;
@@ -2164,24 +2154,24 @@ form.form-general {
   display: none;
 }
 .progress-steps> li.is-complete {
-  color: #71be0f;
+  color: #0088cc;
 }
 .progress-steps> li.is-complete:before a {
-  color: #71be0f;
+  color: #0088cc;
 }
 .progress-steps> li.is-complete:before,.progress-steps> li.is-complete:after {
   color: #FFF;
-  background: #71be0f;
+  background: #0088cc;
 }
 .progress-steps> li.is-active {
-  color: #71be0f;
+  color: #0088cc;
 }
 .progress-steps> li.is-active> a {
-  color: #71be0f;
+  color: #0088cc;
 }
 .progress-steps> li.is-active:before {
   color: #FFF;
-  background: #71be0f;
+  background: #0088cc;
 }
 .progress_last:after {
   display: none!important;
@@ -2249,25 +2239,23 @@ form.form-general {
 .box_footer .btn-lg {
   min-width: 280px;
 }
-.btn-success {
+.btn-primary {
   color: #ffffff;
   background-color: #0088cc;
   border-color: #0088cc
 }
-.btn-success:hover {
+.btn-primary:hover {
   color: #ffffff;
   background-color: #17a7ef;
   border-color: #10a0e8;
 }
-.btn--buy-now:hover {
-  background-color: #7fd611;
-  border-color: #79cc10;
+.btn-border {
+  border-bottom: 4px solid #1f6284;
+  outline: 0;
 }
-#btn-buy-now-2:hover, .btn-buy-now-new:hover {
+.btn-border:hover {
   outline: 0 !important;
-  color: #ffffff;
-  background-color: #17a7ef;
-  border-color: #10a0e8;
+  border-bottom-color: #1f6284;
 }
 .content-sidebar-2 .sidebar {
   float: left;
@@ -2445,7 +2433,7 @@ form.form-general {
 .gift-code .box-header .box-title i {
   font-size: 24px;
   font-weight: normal;
-  color: #71be0f;
+  color: #0088cc;
   margin-right: 7px;
 }
 .gift-code .form-add-gif-tcode {
@@ -2460,7 +2448,7 @@ form.form-general {
   height: 38px;
 }
 .gift-code .form-add-gif-tcode button {
-  background: #71be0f;
+  background: #0088cc;
   border: none;
   border-radius: 0 4px 4px 0;
   height: 38px;
@@ -2503,7 +2491,7 @@ form.form-general {
 }
 .box-thank .box-text-thank .icon-thank i {
   font-size: 100px;
-  color: #71be0f;
+  color: #0088cc;
 }
 .box-thank .box-text-thankp {
   margin: 0;
@@ -2536,9 +2524,9 @@ form.form-general {
   text-decoration: none;
 }
 .box-thank .box-bt-dk .bt-tt-mua {
-  border: 1px solid #71be0f;
+  border: 1px solid #0088cc;
   border-radius: 10px;
-  background-color: #71be0f;
+  background-color: #0088cc;
   width: 243px;
   height: 45px;
   font-size: 15px;
@@ -2549,7 +2537,7 @@ form.form-general {
   line-height: 45px;
 }
 .box-thank .box-bt-dk .bt-dk {
-  border: 1px solid #71be0f;
+  border: 1px solid #0088cc;
   border-radius: 10px;
   background-color: white;
   width: 243px;
@@ -2680,7 +2668,7 @@ form.form-general {
 }
 .chitiet-dh-steps> li.is-complete:before, .chitiet-dh-steps> li.is-complete:after {
   color: #FFF;
-  background: #71be0f;
+  background: #0088cc;
 }
 .chitiet-dh-steps> li:after {
   content: '';
@@ -2695,17 +2683,17 @@ form.form-general {
 }
 .chitiet-dh-steps> li.is-complete:before, .chitiet-dh-steps> li.is-complete:after {
   color: #FFF;
-  background: #71be0f;
+  background: #0088cc;
 }
 .chitiet-dh-steps> li.is-complete:before {
   color: #FFF;
-  background: #71be0f url(../images/icon-check.svg) no-repeat;
+  background: #0088cc url(../images/icon-check.svg) no-repeat;
   background-size: 65% auto;
   background-position: 5px 5px;
 }
 .chitiet-dh-steps> li.is-cong:before {
   color: #FFF;
-  background: #71be0f url(../images/cong.svg) no-repeat;
+  background: #0088cc url(../images/cong.svg) no-repeat;
   background-size: 65% auto;
   background-position: 5px 5px;
 }
