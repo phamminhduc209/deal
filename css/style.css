@@ -2769,7 +2769,7 @@ form.form-general {
     right: 0;
     cursor: pointer;
         padding-left: 5px;
-    padding-top: 3px;
+    padding-top: 1px;
 }
 .block-share .share-item {
     display: inline-block;
