@@ -102,7 +102,6 @@ a:focus {
 p { margin: 0; }
 select:focus, button:focus, input:focus { outline: none; }
 .btn.focus, .btn:focus, .btn:hover {
-  color: #fff;
   text-decoration: none;
   box-shadow: none;
 }
@@ -568,6 +567,17 @@ form.form-general {
   line-height: 20px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.btn-fb-login {
+  width: 65px;
+  height: 22px;
+  background: url(../images/fb.jpg) no-repeat;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0;
+  border: none!important;
+  text-indent: -999999;
 }
 
 
@@ -2248,6 +2258,11 @@ form.form-general {
   color: #ffffff;
   background-color: #17a7ef;
   border-color: #10a0e8;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
 .btn-border {
   border-bottom: 4px solid #1f6284;
