@@ -9,6 +9,71 @@
 
 (function($){
   "use strict";
+  $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+  });
+
+  $('.edit').click(function(){
+    $('#txtId').val($(this).data('text'));
+    $('#txtContent').val($(this).html());
+    $('#editContentModal').modal('show');
+  });
+  $('#btnSaveContent').click(function(){
+    $.ajax({
+      url : $('#route-save-content').val(),
+      type : "POST",
+      data : {
+        id : $('#txtId').val(),
+        content : $('#txtContent').val()
+      },
+      success:  function(){
+        window.location.reload();
+      }
+
+    });
+  });
+
+$(document).on('keypress', '.txtSearch', function(e) {
+      var obj = $(this);
+
+      if (e.which == 13) {
+          if ($.trim(obj.val()) == '') {
+              return false;
+          }
+      }
+  });
+  
+  $(document).on('keypress', '#txtNewsletter', function(e){
+    if(e.keyCode==13){
+        $('#btnNewsletter').click();
+    }
+  });
+    
+  $('#btnNewsletter').click(function() {
+      var email = $.trim($('#txtNewsletter').val());        
+      if(validateEmail(email)) {
+          $.ajax({
+            url: $('#route-newsletter').val(),
+            method: "POST",
+            data : {
+              email: email,
+            },
+            success : function(data){
+              if(+data){
+                alert('Đăng ký nhận bản tin thành công.');
+              }
+              else {
+                alert('Địa chỉ email đã được đăng ký trước đó.');
+              }
+              $('#txtNewsletter').val("");
+            }
+          });
+      } else {
+          alert('Vui lòng nhập địa chỉ email hợp lệ.')
+      }
+  });
 
   // Slide Carousel
   $(".owl-carousel").each(function(index, el) {
@@ -179,3 +244,48 @@
     });
 
 })(jQuery); // End of use strict
+$(document).ready(function(){
+   $('.btn-addcart-product').click(function(){
+       var quantity = $('#quantity').val();
+       var product_id = $(this).data('id');
+        addToCart(product_id, quantity);
+   });
+
+ });
+ $(document).on('click', '.del_item', function() {
+    if(confirm('Quý khách chắc chắn muốn xóa sản phẩm này?')){
+        var id = $(this).data('id');
+        $(this).parents('.tr-wrap').remove();
+        update_product_quantity(id, 0, 'ajax');      
+    }
+  });
+ function addToCart(product_id, quantity) {
+   $.ajax({
+     url: $('#route-add-to-cart').val(),
+     method: "GET",
+     data : {
+       id: product_id,
+       quantity : quantity
+     },
+     success : function(data){
+        location.href = $('#route-cart').val();
+     }
+   });
+ } 
+ function update_product_quantity(id, quantity, type) {
+    $.ajax({
+        url: $('#route-update-product').val(),
+        method: "POST",
+        data: {
+            id: id,
+            quantity: quantity
+        },
+        success: function(data) {
+                      
+        }
+    });
+}
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
