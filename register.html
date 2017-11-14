@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Home</title>
+	<title>Register</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -39,7 +39,7 @@
 				<div class="row">
 					<nav class="top-bar_item top-bar_item-nav navigation navigation-inline pull-right">
 						<ul id="user_info_header" class="navbar-right">
-							<li><i class="hd hd-user-o"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
+							<li><i class="hd hd-user"></i> <a rel="nofollow" href="/dang-ky.html">Đăng ký</a></li>
 							<li>&nbsp; | &nbsp;</li>
 							<li id="login-popup-header-form" class="show-in-checkout dropdown dropdown-arrow">
 								<a href="#" data-toggle="dropdown" aria-expanded="false">Đăng nhập</a>
@@ -73,7 +73,7 @@
 												    <a class="pull-right" rel="nofollow" href="">Quên mật khẩu?</a>
 												</div>
 												<div class="form-group" style="margin-bottom: 0;">
-												    <button type="submit" class="btn btn-success btn-block disabled" disabled="disabled">ÐĂNG NHẬP</button>
+												    <button type="submit" class="btn btn-primary btn-block disabled" disabled="disabled">ÐĂNG NHẬP</button>
 												    <p class="login-register-helper">Bạn chưa có tài khoản? <a rel="nofollow" href="#">Ðăng ký ngay</a></p>
 												</div>
 								        	</form>
@@ -110,20 +110,88 @@
 		<div class="header_main  clearfix">
 			<div class="container">
 				<div class="row">
+					<a class="toggle-nav visible-xs visible-sm" data-target="#hd-container" data-effect="hd-effect-4">
+						<i class="hd hd-bars"></i>
+					</a><!-- /.toggle-nav -->
+					<a class="toggle-search visible-xs visible-sm" data-target="#main-search">
+						<i class="hd hd-search"></i>
+					</a><!-- /.toggle-search -->
 					<div class="logo-wrapper col-md-4">
 					    <a href="#" title="">
 					        <img src="images/logo.png" alt="">
 					    </a>
 					</div><!-- /.logo-wrapper -->
+					<div class="search-area col-md-6" id="main-search">
+						<form action="/tim-kiem" method="get" class="">
+							<div class="search-box form-inline clearfix">
+								<div class="search-box_category">
+									<select class="selectpicker" id="category_search" name="category">
+										<option value="0">Tất cả danh mục</option>
+										<option value="557">- Ẩm thực</option>
+										<option value="579">- Spa &apm; Làm đẹp</option>
+										<option value="555">- Giải trí</option>
+										<option value="581">- Du Lịch</option>
+										<option value="571">- Sản Phẩm</option>
+										<option value="593">- Thời Trang &apm; Phụ Kiện</option>
+									</select>
+								</div>
+								<div class="search-box_input">
+									<span class="twitter-typeahead">
+										<input type="text" class="form-control input-search tt-hint" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm / khuyến mãi">
+									</span>
+									<button class="btn btn-primary">
+                    <i class="hd hd-search"></i>
+                    <span class="sr-only">Tìm kiếm</span>
+                  </button>
+								</div>
+							</div>
+						</form>
+					</div><!-- /.search-area -->
+					<div class="col-md-2 header-cart-wrapper">
+						<ul class="header-cart">
+							<li class="nav-cart">
+								<a href="#" data-toggle="dropdown">
+									<span class="icon-cart"><img src="images/cart.jpg" alt=""></span>
+									<span class="circle">1</span>
+									<span class="hidden-xs hidden-sm">Giỏ hàng</span>
+								</a>
+								<div class="dropdown-menu dropdown-cart">
+									<div class="minicart_wrapper">
+									    <div class="minicart_item">
+									        <div class="minicart_item_info">
+									            <img src="images/cart/338333-buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3.jpg" alt="">
+									            <div class="minicart_item_name">
+									                <div><a href="/ho-chi-minh/buffet-viet-nhat-han/buffet-trua-bbq-bo-my-hai-san-lau-gan-50-mon-tai-nha-hang-yaki-3-338333.html">Buffet Trưa BBQ Bò Mỹ - Hải Sản - Lẩu Gần 50 Món Tại Nhà Hàng Yaki 3 - <span style="color: #999;">Mã SP: 338333</span></a></div>
+									                <span class="minicart_item_price price"><span class="price_value">150,000</span><span class="price_symbol">đ</span></span> x 1
+									            </div>
+									        </div>
+									        <div class="minicart_item_actions"><a href="#" rel="nofollow" data-product="338333" title="Xóa khỏi giỏ hàng" class="btn-close show-on-hover">x</a></div>
+									    </div>
+									</div><!-- /.minicart_wrapper -->
+									<div class="minicart_summary">
+									    Tổng cộng: <strong>
+									    <span class="price price-highlight">
+									    <span class="price_value">150,000</span>
+									    <span class="price_symbol">đ</span>
+									    </span></strong>
+									</div><!-- /.minicart_summary -->
+									<div class="minicart_actions">
+									    <a class="btn btn-view-cart" href="/checkout-step-1" rel="nofollow">Xem giỏ hàng</a>
+									    <a class="btn btn-primary btn-buy-now btn-border" href="/checkout-step-2" rel="nofollow">Đặt hàng</a>
+									</div><!-- /.minicart_actions -->
+								</div><!-- /.dropdown-menu dropdown-cart -->
+							</li>
+						</ul><!-- /.header-cart -->
+					</div><!-- /.header-cart-wrapper -->
 				</div>
 			</div>
 		</div><!-- /.header_main -->
 		<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
-	        <div class="container" id="main-menu">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
-		              <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
-		            </button>
+      <div class="container" id="main-menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><i class="hd hd-bars"></i>
+          </button>
 				</div>
 				<div class="collapse navbar-collapse menu" id="menu-navbar-collapse">
 					<ul class="nav navbar-nav navbar-left">
@@ -289,7 +357,7 @@
 	                                        </div>
 	                                    </div>
 	                                    <div class="form-group form-group-lg">
-	                                        <button type="submit" class="btn btn-lg btn-success btn-block">ĐĂNG KÝ</button>
+	                                        <button type="submit" class="btn btn-lg btn-primary btn-border btn-block">ĐĂNG KÝ</button>
 	                                    </div>
 	                				</div>
 	                			</div>
@@ -376,7 +444,7 @@
 							</div>
 							<div class="form-group">
 								<div class="input-group">
-									<button type="submit" class="btn btn-success newsletter_button">Đăng ký
+									<button type="submit" class="btn btn-primary newsletter_button">Đăng ký
 									</button>
 								</div>
 							</div>
@@ -389,13 +457,13 @@
 				</div>
 				<div class="col-fter-3">
 					<div class="social">
-						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI HOTDEAL</div>
+						<div class="social_heading footer-menu-heading">KẾT NỐI VỚI Shop</div>
 						<div class="social_items">
-							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="hd hd-facebook"></i></a>
-							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="hd hd-twitter"></i></a>
-							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="hd hd-google-plus"></i></a>
-							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="hd hd-linkedin"></i></a>
-							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="hd hd-youtube"></i></a>
+							<a target="_blank" class="social_item social_item-facebook" href="#" rel="nofollow"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" class="social_item social_item-twitter" href="#" rel="nofollow"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" class="social_item social_item-google-plus" href="#" rel="nofollow"><i class="fa fa-google-plus"></i></a>
+							<a target="_blank" class="social_item social_item-linkedin" href="#" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" class="social_item social_item-youtube" href="#" rel="nofollow"><i class="fa fa-youtube"></i></a>
 						</div>
 					</div>
 				</div>
@@ -421,10 +489,10 @@
 	            </p>
 		    </div>
 		</div>
-	</footer>
+	</footer><!-- /.footer -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
-  		<i class="hd hd-angle-up" aria-hidden="true"></i>
+  		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
 
 	<!-- ===== JS ===== -->

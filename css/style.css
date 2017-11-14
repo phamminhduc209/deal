@@ -849,8 +849,8 @@ form.form-general {
 .products .product {
   cursor: pointer;
   transition: all 0.5s;
-  min-height: 375px;
-  max-height: 375px;
+  min-height: 378px;
+  max-height: 378px;
 }
 .products .product:hover {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
@@ -2352,7 +2352,7 @@ form.form-general {
   hyphens: auto;
 }
 .address-box.selected:hover, .address-box.selected {
-  border: 1px solid #71be10;
+  border: 1px solid #1f6284;
 }
 .address-box .head {
   display: block;
@@ -2363,19 +2363,6 @@ form.form-general {
   position: absolute;
   bottom: 37px;
   padding-top: 8px;
-}
-.address-box .address-tool-box .btn-select-address {
-  background-color: #d2d2d2;
-}
-.address-box.selected:hover .address-tool-box .btn-select-address, .address-box.selected .address-tool-box .btn-select-address {
-  background-color: #71be10;
-  color: #fff;
-  border-color: #71be10;
-}
-.address-box .address-tool-box .btn-delete-address:hover {
-  background-color: #ed1c24;
-  color: #fff;
-  border-color: #ed1c24;
 }
 .order-info {
   margin-bottom: 15px;
