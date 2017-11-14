@@ -2757,3 +2757,33 @@ form.form-general {
 }
 .table-order-details> thead> tr> th {
   background-color: #eeeeee;
+}
+/* UPDATE CSS mr.Hoang */ 
+.edit {  
+    position: relative;
+    border: 1px dashed transparent;
+    min-height: 20px;
+}
+.edit:hover {
+    border: 1px dashed #c70f19;
+}
+.edit:hover:before {
+    content: "\f040";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #c70f19;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.block-share .share-item {
+    display: inline-block;
+    vertical-align: top;
+    line-height: initial;
+}
+/* end */
