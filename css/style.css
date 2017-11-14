@@ -569,26 +569,7 @@ form.form-general {
   color: #fff;
   text-transform: uppercase;
 }
-.btn-success {
-  color: #ffffff;
-  background-color: #71be0f;
-  border-color: #63a60d;
-}
-.btn-buy-now, .btn-buy-alert {
-  min-width: 130px;
-  font-weight: 700;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(99, 165, 15, 0.75);
-}
-#btn-buy-now-2, .btn-buy-now-new {
-  border-bottom: 4px solid #487513;
-  outline: 0;
-}
-#btn-buy-now-2:hover, .btn-buy-now-new:hover {
-  outline: 0 !important;
-  background-color: #7fd611;
-  border-bottom-color: #487513;
-}
+
 
 
 .navbar {
@@ -653,7 +634,6 @@ form.form-general {
 .menu .navbar-nav .submenu li {
   display: block;
   position: relative;
-  text-transform: capitalize;
   padding: 5px 0;
 }
 .menu .navbar-nav .submenu li a {
@@ -1018,12 +998,10 @@ form.form-general {
 }
 .box-products .box-product-head {
   height: 37px;
-  /* border-bottom: 1px solid #ccc; */
   background: #fff;
 }
 .box-products .box-product-head .box-title {
   color: #fff;
-  text-transform: capitalize;
   border-bottom: 3px solid #0088cc;
   padding-bottom: 5px;
   font-size: 18px;
@@ -1126,7 +1104,6 @@ form.form-general {
   font-size: 24px;
 }
 .blog-list .page-heading {
-  text-transform: capitalize;
   font-size: 18px;
 }
 .page-heading span.page-heading-title {
@@ -2272,10 +2249,15 @@ form.form-general {
 .box_footer .btn-lg {
   min-width: 280px;
 }
+.btn-success {
+  color: #ffffff;
+  background-color: #0088cc;
+  border-color: #0088cc
+}
 .btn-success:hover {
   color: #ffffff;
-  background-color: #558f0b;
-  border-color: #416e09;
+  background-color: #17a7ef;
+  border-color: #10a0e8;
 }
 .btn--buy-now:hover {
   background-color: #7fd611;
@@ -2283,8 +2265,9 @@ form.form-general {
 }
 #btn-buy-now-2:hover, .btn-buy-now-new:hover {
   outline: 0 !important;
-  background-color: #7fd611;
-  border-bottom-color: #487513;
+  color: #ffffff;
+  background-color: #17a7ef;
+  border-color: #10a0e8;
 }
 .content-sidebar-2 .sidebar {
   float: left;
