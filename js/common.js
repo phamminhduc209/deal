@@ -10,9 +10,9 @@
 (function($){
   "use strict";
   $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
   });
 
   $('.edit').click(function(){
@@ -35,14 +35,13 @@
     });
   });
 
-$(document).on('keypress', '.txtSearch', function(e) {
-      var obj = $(this);
-
-      if (e.which == 13) {
-          if ($.trim(obj.val()) == '') {
-              return false;
-          }
+  $(document).on('keypress', '.txtSearch', function(e) {
+    var obj = $(this);
+    if (e.which == 13) {
+      if ($.trim(obj.val()) == '') {
+        return false;
       }
+    }
   });
   
   $(document).on('keypress', '#txtNewsletter', function(e){
@@ -75,7 +74,9 @@ $(document).on('keypress', '.txtSearch', function(e) {
       }
   });
 
-  // Slide Carousel
+ /**==============================
+  ***  owl-carousel
+  ===============================**/
   $(".owl-carousel").each(function(index, el) {
     var config = $(this).data();
     config.navText = ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'];
@@ -96,30 +97,9 @@ $(document).on('keypress', '.txtSearch', function(e) {
     $(this).owlCarousel(config);
   });
 
-  /** COUNT DOWN **/
-  $('[data-countdown]').each(function() {
-     var $this = $(this), finalDate = $(this).data('countdown');
-     $this.countdown(finalDate, function(event) {
-       var fomat ='<span>%H</span><b></b><span>%M</span><b></b><span>%S</span>';
-       $this.html(event.strftime(fomat));
-     });
-  });
-  if($('.countdown-lastest').length >0){
-    var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
-    var layout = '<span class="box-count"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
-    $('.countdown-lastest').each(function() {
-      var austDay = new Date($(this).data('y'),$(this).data('m') - 1,$(this).data('d'),$(this).data('h'),$(this).data('i'),$(this).data('s'));
-      $(this).countdown({
-        until: austDay,
-        labels: labels, 
-        layout: layout
-      });
-    });
-  }
-
-  /*
-   * 1. Scroll to Top
-  */
+  /**==============================
+  ***  return to top
+  ===============================**/
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 200) {
       $('#return-to-top').addClass('td-scroll-up-visible');
@@ -133,130 +113,63 @@ $(document).on('keypress', '.txtSearch', function(e) {
     }, 'slow');
   });
 
-  $(window).scroll(function(){
-    var h = $(window).scrollTop();
-    var width = $(window).width();
-    if(width > 767){
-      if(h > 35){
-        $('#main-header').addClass('main-header-ontop');
-      }else{
-        $('#main-header').removeClass('main-header-ontop');
-      }
-    }
+  /*  [ Main Menu ]
+  - - - - - - - - - - - - - - - - - - - - */
+  $(".toggle-nav").on( 'click', function() {
+    $( this ).toggleClass('has-open');
+    $("header .menu").toggleClass("has-open");
+    $("body").toggleClass("menu-open");
   });
 
-  /*
-   * 2. Sticky Menu
-  */
-  $('.fixed').sticky({ topSpacing: 0 });
-  $('.fixed-res').sticky({ topSpacing: 105 });
+  /** Menu, Menu Mega Responsive **/
+  $(document).ready(function(){
+    $('.menu ul li.parent').append('<span class="plus"></span>');
+    $('.menu ul li.parent .plus').click(function(){
+      $(this).toggleClass('open').siblings('.submenu, .product-menu').slideToggle();
+    });
+  });
 
   /**==============================
-    ***  Auto width megamenu
-    ===============================**/
-    function auto_width_megamenu(){
-        var full_width = parseInt($('.container').innerWidth());
-        //full_width = $( document ).width();
-        var menu_width = parseInt($('.vertical-menu-content').actual('width'));
-        $('.vertical-menu-content').find('.vertical-dropdown-menu').each(function(){
-            $(this).width((full_width - menu_width)-2);
-        });
-    }
-    /**==============================
-    ***  Remove menu on top
-    ===============================**/
-    function remove_menu_ontop(){
-        var width = parseInt($(window).width());
-        if(width < 768){
-            $('#nav-top-menu').removeClass('nav-ontop');
-            if($('body').hasClass('home')){
-                if(width > 1024)
-                    $('#nav-top-menu').find('.vertical-menu-content').show();
-                else{
-                    $('#nav-top-menu').find('.vertical-menu-content').hide();
-                }
-            }
-            ///
-            $('#shopping-cart-box-ontop .cart-block').appendTo('#cart-block');
-            $('#shopping-cart-box-ontop').fadeOut();
-            $('#user-info-opntop #user-info-top').appendTo('.top-header .container');
-            $('#form-search-opntop form').appendTo('#header .header-search-box');
-        }
-    }
-    /* Top menu*/
-    function scrollCompensate(){
-        var inner = document.createElement('p');
-        inner.style.width = "100%";
-        inner.style.height = "200px";
-        var outer = document.createElement('div');
-        outer.style.position = "absolute";
-        outer.style.top = "0px";
-        outer.style.left = "0px";
-        outer.style.visibility = "hidden";
-        outer.style.width = "200px";
-        outer.style.height = "150px";
-        outer.style.overflow = "hidden";
-        outer.appendChild(inner);
-        document.body.appendChild(outer);
-        var w1 = parseInt(inner.offsetWidth);
-        outer.style.overflow = 'scroll';
-        var w2 = parseInt(inner.offsetWidth);
-        if (w1 == w2) w2 = outer.clientWidth;
-        document.body.removeChild(outer);
-        return (w1 - w2);
-    }
+  ***  box-products .toggle-menu
+  ===============================**/
+  $('.box-products .toggle-menu').click(function() {
+    $(this).next().slideToggle();
+  });
 
-    function resizeTopmenu(){
-        if($(window).width() + scrollCompensate() >= 768){
-            var main_menu_w = $('#main-menu .navbar').innerWidth();
+  /**==============================
+  *** header_main
+  ===============================**/
+  $(window).on('scroll', function() {
+    var jheader = $('.header_main'),
+      i = $(window).scrollTop();
+    if (jheader.hasClass('header_main-simple'))
+      return;
+    i > jheader.innerHeight() ? jheader.addClass("on-scroll") : i <= jheader.innerHeight() && jheader.removeClass('on-scroll');
+    i > window.prevScrollTop + 20 ? (jheader.removeClass("on-scroll-up"), window.prevScrollTop = i) : i < window.prevScrollTop - 20 && (jheader.addClass("on-scroll-up"), window.prevScrollTop = i);
+  });
 
-            if($('#main-menu').hasClass('menu-option9') || $('#main-menu').hasClass('menu-option10') || $('#main-menu').hasClass('menu-option11') || $('#main-menu').hasClass('menu-option14')){
-                return false;
-            }
-
-            $("#main-menu ul.mega_dropdown").each(function(){
-                var menu_width = $(this).innerWidth();
-                var offset_left = $(this).position().left;
-                if(menu_width > main_menu_w){
-                    $(this).css('width',main_menu_w+'px');
-                    $(this).css('left','0');
-                }else{
-                    if((menu_width + offset_left) > main_menu_w){
-                        var t = main_menu_w-menu_width;
-                        var left = parseInt((t/2));
-                        $(this).css('left',left);
-                    }
-                }
-            });
-        }
-
-        if($(window).width()+scrollCompensate() < 1025){
-            $("#main-menu li.dropdown:not(.active) >a").attr('data-toggle','dropdown');
-        }else{
-            $("#main-menu li.dropdown >a").removeAttr('data-toggle');
-        }
-    }
-
-    $('#contenhomeslider').bxSlider({
-      pager: false,
-      nextText: '<i class="fa fa-angle-right"></i>',
-      prevText: '<i class="fa fa-angle-left"></i>',
-    });
+  /**==============================
+  ***  bxSlider home
+  ===============================**/
+  $('#contenhomeslider').bxSlider({
+    pager: false,
+    nextText: '<i class="fa fa-angle-right"></i>',
+    prevText: '<i class="fa fa-angle-left"></i>',
+  });
 
 })(jQuery); // End of use strict
-$(document).ready(function(){
-   $('.btn-addcart-product').click(function(){
-       var quantity = $('#quantity').val();
-       var product_id = $(this).data('id');
-        addToCart(product_id, quantity);
-   });
-
- });
- $(document).on('click', '.del_item', function() {
+  $(document).ready(function(){
+    $('.btn-addcart-product').click(function(){
+      var quantity = $('#quantity').val();
+      var product_id = $(this).data('id');
+      addToCart(product_id, quantity);
+    });
+  });
+  $(document).on('click', '.del_item', function() {
     if(confirm('Quý khách chắc chắn muốn xóa sản phẩm này?')){
-        var id = $(this).data('id');
-        $(this).parents('.tr-wrap').remove();
-        update_product_quantity(id, 0, 'ajax');      
+      var id = $(this).data('id');
+      $(this).parents('.tr-wrap').remove();
+      update_product_quantity(id, 0, 'ajax');      
     }
   });
  function addToCart(product_id, quantity) {

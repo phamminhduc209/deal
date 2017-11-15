@@ -1032,6 +1032,7 @@ form.form-general {
 .box-products .box-product-head {
   height: 37px;
   background: #fff;
+  position: relative;
 }
 .box-products .box-product-head .box-title {
   color: #fff;
@@ -2956,4 +2957,17 @@ p + .form {
   font-size: 14px;
   margin-top: 5px;
   color: #424242;
+}
+
+.box-products .toggle-menu {
+  float: right;
+  line-height: 36px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+.box-products .toggle-menu:before {
+  font: normal normal normal 21px/1 FontAwesome;
+  content: "\f0c9";
+  line-height: inherit;
+  color: #08c;
 }
