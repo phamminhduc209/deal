@@ -866,7 +866,7 @@ form.form-general {
   min-height: 378px;
   max-height: 378px;
 }
-.products-home .product {
+.products-cate .product {
   transition: all 0.5s;
   min-height: 430px;
   max-height: 430px;
