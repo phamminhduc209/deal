@@ -1021,6 +1021,7 @@ form.form-general {
   padding-right: 10px;
   line-height: 37px;
   padding-top: 8px;
+  text-transform: uppercase;
 }
 .box-products .box-product-head .box-title i {
   margin-right: 5px;
@@ -1121,8 +1122,8 @@ form.form-general {
 .page-heading span.page-heading-title {
   border-bottom: 3px solid #0099cc;
   position: absolute;
-  bottom: -1px;
-  padding: 0 12px;
+  bottom: -1px;  
+  text-transform: uppercase;
 }
 .blog-list .blog-list-wapper {
   margin-top: 30px;
