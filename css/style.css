@@ -1871,9 +1871,9 @@ form.form-general {
   padding-bottom: 15px;
 }
 .add-to-cart-buttons .btn-buy-now-x2 {
-  min-width: 240px;
+  min-width: 150px;
   padding: 5px;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .product-well {
