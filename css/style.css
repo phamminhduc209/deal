@@ -613,7 +613,7 @@ form.form-general {
 }
 .menu .navbar-nav>li>a {
   border-right: none;
-  color: #fff;
+  color: #333;
   text-transform: none;
   padding: 0 14px;
   background: transparent;
