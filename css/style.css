@@ -2960,6 +2960,7 @@ p + .form {
 }
 
 .box-products .toggle-menu {
+  display: none;
   float: right;
   line-height: 36px;
   max-height: 50px;
