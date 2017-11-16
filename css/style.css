@@ -1602,11 +1602,12 @@ form.form-general {
 }
 .filter .filter_button> a {
   display: block;
-  color: #4b4b4b;
+  color: #0088cc;
   text-decoration: none;
-  Font-size: 13px;
-  Font-weight: bold;
-  Margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 .filter .filter_button span {
   color: #a1a1a1;
@@ -1617,8 +1618,7 @@ form.form-general {
 .filter .filter_button span:after {
   content: ")";
 }
-.filter .filter_button> ul {
-  margin-top: 3px;
+.filter .filter_button> ul {  
   padding-left: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
