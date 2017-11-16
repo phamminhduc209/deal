@@ -2033,7 +2033,7 @@ form.form-general {
 /* Register
   ========================================================================== */
 .main-content {
-  padding: 20px 0 40px;
+  padding: 0px 0 40px;
   position: relative;
   z-index: 6;
   background-color: #f4f4f4;
@@ -2794,7 +2794,7 @@ form.form-general {
   text-transform: uppercase;
 }
 .sidebar-first .side-menu> li> a {
-  padding: 5px 5px 5px 0;
+  padding: 15px 5px 15px 0;
 }
 .sidebar-first .side-menu> li> a:after {
   font-family: 'FontAwesome';
