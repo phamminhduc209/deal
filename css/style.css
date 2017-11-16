@@ -613,7 +613,7 @@ form.form-general {
 }
 .menu .navbar-nav>li>a {
   border-right: none;
-  color: #333;
+  color: #fff;
   text-transform: none;
   padding: 0 14px;
   background: transparent;
@@ -1307,6 +1307,7 @@ form.form-general {
 }
 .newsletter .input-group input[type='text'] {
   border: 1px solid #ccc;
+  width: 224px;
 }
 .col-fter-3 {
   width: 234px;
