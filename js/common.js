@@ -202,3 +202,38 @@ function validateEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
 }
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : $('#fb-app-id').val(),
+    cookie     : true,  // enable cookies to allow the server to access
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.7' // use graph api version 2.7
+  });
+};
+$(document).ready(function() {
+  $('.login-by-facebook-popup').click(function() {
+    FB.login(function(response){
+      if(response.status == "connected")
+      {
+         // call ajax to send data to server and do process login
+        var token = response.authResponse.accessToken;
+        $.ajax({
+          url: $('#route-ajax-login-fb').val(),
+          method: "POST",
+          data : {
+            token : token
+          },
+          success : function(data){
+            if(!data.success) {
+              location.reload();
+            } else {
+              location.href = $('#route-cap-nhat-thong-tin').val();
+            }
+          }
+        });
+
+      }
+    }, {scope: 'public_profile,email'});
+  });  
+});
