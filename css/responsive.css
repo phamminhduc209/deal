@@ -468,6 +468,48 @@
 	.address-box .address-tool-box {
 	  bottom: 15px;
 	}
+	.box-thank {
+	  padding: 15px;
+	}
+	.form-registration .form_inner {
+	  width: auto;
+	}
+	.sidebar-content-2 .sidebar {
+		width: 100%;
+	  margin-right: 0;
+	}
+	.sidebar-content-2 .content {
+		width: 100%;
+	}
+	.box-chitiet-dh {
+	  padding: 15px;
+	}
+	.chitiet-dh-steps> li span {
+	  display: none;
+	}
+	.table-order-details thead {
+	  display: none;
+	}
+	.table-order-details tbody tr {
+	  display: block;
+	  padding: 10px 0;
+	}
+	.table-order-details tbody tr td {
+	  display: block;
+	  padding: 0;
+	}
+	.table-order-details tbody tr td .key {
+	  width: 40%;
+	  max-width: 140px;
+	  display: inline-block !important;
+	}
+	.table-order-details tbody tr td.total {
+	  text-align: left;
+	  color: #ed1c24;
+	}
+	.table-order-details tbody tr + tr {
+	  border-top: 1px solid #dddddd;
+	}
 }
 
 /*----------------
@@ -477,6 +519,23 @@
 	.products-cate .product {
 		min-height: 460px;
   	max-height: 460px;
+	}
+}
+
+/*----------------
+[Styles for devices max 600px
+*/
+@media (max-width: 600px) {
+	.block-article-list .article-list-news .article-news-item .article-news-item-head {
+	  width: 100%;
+	  float: left;
+	  margin-right: 0;
+	}
+	.block-article-list .article-list-news .article-news-item .article-news-item-description {
+	  width: calc(100% - 0px);
+	  float: left;
+	  text-align: left;
+	  position: relative;
 	}
 }
 
@@ -523,7 +582,17 @@
 /*----------------
 [Styles for devices max 375px
 */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+	.top-bar {
+	  height: 40px;
+	  background-color: #f4f4f4;
+	}
+	.top-bar_item {
+		height: 35px;
+		line-height: 35px;
+		padding: 0;
+	}
+}
 
 /*----------------
 [Styles for devices max 320px
