@@ -2789,6 +2789,7 @@ form.form-general {
 }
 .sidebar-first .content {
   margin-left: 0;
+  line-height: 25px;
 }
 .widget_title {
   margin: 0 0 10px;
