@@ -1827,12 +1827,16 @@ form.form-general {
 }
 .product-details .product_price {
   display: inline-block;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 30px;
   vertical-align: middle;
 }
+.product-details .price_txt {
+  color: #333;
+  font-size: 13px;
+}
 .product-details .product_price-list-price {
-  font-size: 18px;
+  font-size: 26px;
   color: #333;
   vertical-align: -7px;
 }
