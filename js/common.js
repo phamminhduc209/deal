@@ -158,8 +158,10 @@
   ===============================**/
   $('#contenhomeslider').bxSlider({
     pager: false,
+    auto: true,  
     nextText: '<i class="fa fa-angle-right"></i>',
     prevText: '<i class="fa fa-angle-left"></i>',
+    autoStart:true
   });
 
 })(jQuery); // End of use strict
