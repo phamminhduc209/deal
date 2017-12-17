@@ -342,7 +342,10 @@ form.form-general {
   background-color: #ffffff;
 }
 .logo-wrapper {
-  padding: 24px 10px;
+  padding: 10px 10px;
+}
+.logo-wrapper img {
+  margin-top: -8px;
 }
 
 .search-area {
