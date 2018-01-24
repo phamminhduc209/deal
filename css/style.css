@@ -63,6 +63,7 @@
 @import url(../lib/lightbox/css/lightbox.css);
 @import url(../lib/bootstrap-select/css/bootstrap-select.min.css);
 @import url(../lib/flexslider/flexslider.css);
+@import url(font-hd.css);
 /*@import url(font-hd.css);*/
 
 /* Layout Style
@@ -90,7 +91,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0088cc;
+  color: #fb6800;
   text-decoration: none;
   outline: none;
   -webkit-transition: all 0.2s linear;
@@ -166,10 +167,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 .block-breadcrumb .breadcrumb li a:hover {
-  color: #0088cc;
+  color: #fb6800;
 }
 .block-breadcrumb .breadcrumb li.active {
-  color: #0088cc;
+  color: #fb6800;
 }
 .block-breadcrumb .breadcrumb>li+li:before {
   font-family: "FontAwesome";
@@ -341,13 +342,18 @@ form.form-general {
   background-color: #ffffff;
 }
 .logo-wrapper {
-  padding: 24px 10px;
+  padding: 10px 10px;
+}
+.logo-wrapper img {
+  margin-top: -8px;
 }
 
 .search-area {
   padding: 18px 30px 0;
 }
-
+.box-products .box-product-head .box-title img{
+  max-width: 30px;
+}
 .search-box {
   position: relative;
   height: 40px;
@@ -443,7 +449,7 @@ form.form-general {
 }
 .header-cart .circle {
   border: none;
-  background: #0088cc;
+  background: #fb6800;
   color: #fff;
   font-size: 12px;
   padding: 2px 6px;
@@ -508,7 +514,7 @@ form.form-general {
 }
 .dropdown-cart .minicart_item_price {
   display: inline-block;
-  color: #0088cc;
+  color: #fb6800;
 }
 .btn-close {
   display: inline-block;
@@ -538,7 +544,7 @@ form.form-general {
   text-align: right;
 }
 .price-highlight {
-  color: #0088cc;
+  color: #fb6800;
   font-weight: 500;
 }
 .dropdown-cart .minicart_summary .price {
@@ -604,7 +610,7 @@ form.form-general {
   min-height: 40px;
 }
 .nav-top-menu1 {
-  background: #0088cc;
+  background: #fb6800;
   border: none;
   border-radius: 0;
   margin-bottom: 0;
@@ -622,7 +628,7 @@ form.form-general {
   line-height: 40px;
 }
 .menu .navbar-nav>li> a:hover, .menu .navbar-nav>li>a.active {
-  background: #1f6284;
+  background: #b7551c;
   color: #fff;
   outline: none;
 }
@@ -714,7 +720,7 @@ form.form-general {
   height: auto;
 }
 .homeslider .bx-controls-direction .bx-prev, .homeslider .bx-controls-direction .bx-next {
-  background: #0088cc;
+  background: #fb6800;
   text-indent: 0px!important;
   color: #fff;
   font-size: 15px;
@@ -767,7 +773,7 @@ form.form-general {
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
-  background: #0088cc;
+  background: #fb6800;
   color: #fff;
   padding-top: 40px;
 }
@@ -814,7 +820,7 @@ form.form-general {
 .hot-deals-box .hot-deals-tab .box-count-down .box-count:before {
   width: 100%;
   height: 100%;
-  background: #0088cc;
+  background: #fb6800;
   float: left;
   content: '';
   border-radius: 90%;
@@ -922,7 +928,7 @@ form.form-general {
   padding: 10px 15px;
 }
 .product_price {
-  color: #0088cc;
+  color: #fb6800;
   font-size: 20px;
   font-weight: 700;
   white-space: nowrap;
@@ -994,7 +1000,7 @@ form.form-general {
 }
 .owl-controls .owl-prev:hover,
 .owl-controls .owl-next:hover{
-  background: #0088cc;
+  background: #fb6800;
   color: #fff;
 }
 .owl-controls .owl-prev .fa,
@@ -1038,7 +1044,7 @@ form.form-general {
 }
 .box-products .box-product-head .box-title {
   color: #fff;
-  border-bottom: 3px solid #0088cc;
+  border-bottom: 3px solid #fb6800;
   padding-bottom: 5px;
   font-size: 18px;
   padding-left: 10px;
@@ -1075,7 +1081,7 @@ form.form-general {
 .box-products .box-tabs li>a:before {
   content: '';
   height: 1px;
-  background: #0088cc;
+  background: #fb6800;
   position: absolute;
   bottom: 0;
   left: 10px;
@@ -1096,7 +1102,7 @@ form.form-general {
   content: "\f0d8";
   font-family: 'FontAwesome';
   font-size: 13px;
-  color: #0088cc;
+  color: #fb6800;
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -1240,7 +1246,7 @@ form.form-general {
   text-align: right;
 }
 .blog-list .blog-list-wapper ul li .readmore a {
-  color: #0088cc;
+  color: #fb6800;
 }
 .blog-list .blog-list-wapper ul li .readmore a:after {
   font: normal normal normal 14px/1 FontAwesome;
@@ -1291,11 +1297,11 @@ form.form-general {
   margin: 5px 0;
 }
 .contact_email {
-  color: #0088cc;
+  color: #fb6800;
   margin: 3px 0;
 }
 .contact_email a {
-  color: #0088cc;
+  color: #fb6800;
 }
 .col-fter-1 {
   width: 337px;
@@ -1361,7 +1367,7 @@ form.form-general {
   color: #000;
 }
 .hotline_number {
-  color: #0088cc;
+  color: #fb6800;
 }
 .col-fter-5 {
   width: 205px;
@@ -1426,7 +1432,7 @@ form.form-general {
   line-height: 34px;
   text-align: center;
   border-radius: 6px 0 6px 0;
-  background-color: #0088cc;
+  background-color: #fb6800;
 }
 .current-filter {
   margin-bottom: 10px;
@@ -1466,7 +1472,7 @@ form.form-general {
   vertical-align: 1px;
 }
 .filter-inline .filter_button:hover {
-  background-color: #0088cc;
+  background-color: #fb6800;
   color: #fff;
   text-decoration: none;
   box-shadow: none;
@@ -1500,7 +1506,7 @@ form.form-general {
   border-top-left-radius: 0px;
 }
 .block-pagination .pagination> li.active> a, .block-pagination .pagination> li.active> a:hover {
-  background-color: #0088cc;
+  background-color: #fb6800;
   border-color: #029eec;
   color: #fff;
 }
@@ -1535,7 +1541,7 @@ form.form-general {
   padding: 0;
 }
 .filter {
-  border-top: 2px solid #0088cc;
+  border-top: 2px solid #fb6800;
   position: relative;
 }
 .filter:before, .filter:after {
@@ -1554,7 +1560,7 @@ form.form-general {
   display: inline-block;
   width: 18px;
   margin-right: 8px;
-  color: #0088cc;
+  color: #fb6800;
   font-size: 18px;
   text-align: center;
   vertical-align: -2px;
@@ -1603,7 +1609,7 @@ form.form-general {
 }
 .filter .filter_button> a {
   display: block;
-  color: #0088cc;
+  color: #fb6800;
   text-decoration: none;
   font-size: 13px;
   font-weight: bold;
@@ -1698,7 +1704,7 @@ form.form-general {
 }
 .slider-range .ui-slider-range {
   height: 6px;
-  background: #0088cc;
+  background: #fb6800;
   position: absolute;
   top: 50%;
   margin-top: -3px;
@@ -1715,7 +1721,7 @@ form.form-general {
 .slider-range .ui-slider-handle {
   width: 15px;
   height: 15px;
-  background-color: #0088cc;
+  background-color: #fb6800;
   display: block;
   position: absolute;
   top: -5px;
@@ -1971,7 +1977,7 @@ form.form-general {
   margin: 0 5px 8px 0;
   height: 26px;
   line-height: 26px;
-  background-color: #0088cc;
+  background-color: #fb6800;
   color: #fff;
   font-size: 13px;
   font-weight: 400;
@@ -1998,7 +2004,7 @@ form.form-general {
   right: 5px;
   width: 40px;
   height: 40px;
-  background-color: #0088cc;
+  background-color: #fb6800;
   z-index: 1;
   transform: translate3d(0, 70px, 0);
   -webkit-transform: translate3d(0, 70px, 0);
@@ -2161,24 +2167,24 @@ form.form-general {
   display: none;
 }
 .progress-steps> li.is-complete {
-  color: #0088cc;
+  color: #fb6800;
 }
 .progress-steps> li.is-complete:before a {
-  color: #0088cc;
+  color: #fb6800;
 }
 .progress-steps> li.is-complete:before,.progress-steps> li.is-complete:after {
   color: #FFF;
-  background: #0088cc;
+  background: #fb6800;
 }
 .progress-steps> li.is-active {
-  color: #0088cc;
+  color: #fb6800;
 }
 .progress-steps> li.is-active> a {
-  color: #0088cc;
+  color: #fb6800;
 }
 .progress-steps> li.is-active:before {
   color: #FFF;
-  background: #0088cc;
+  background: #fb6800;
 }
 .progress_last:after {
   display: none!important;
@@ -2248,8 +2254,8 @@ form.form-general {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #0088cc;
-  border-color: #0088cc
+  background-color: #fb6800;
+  border-color: #fb6800
 }
 .btn-primary:hover {
   color: #ffffff;
@@ -2262,12 +2268,12 @@ form.form-general {
   border-color: #adadad;
 }
 .btn-border {
-  border-bottom: 4px solid #1f6284;
+  border-bottom: 4px solid #b7551c;
   outline: 0;
 }
 .btn-border:hover {
   outline: 0 !important;
-  border-bottom-color: #1f6284;
+  border-bottom-color: #b7551c;
 }
 .content-sidebar-2 .sidebar {
   float: left;
@@ -2364,7 +2370,7 @@ form.form-general {
   hyphens: auto;
 }
 .address-box.selected:hover, .address-box.selected {
-  border: 1px solid #1f6284;
+  border: 1px solid #b7551c;
 }
 .address-box .head {
   display: block;
@@ -2432,7 +2438,7 @@ form.form-general {
 .gift-code .box-header .box-title i {
   font-size: 24px;
   font-weight: normal;
-  color: #0088cc;
+  color: #fb6800;
   margin-right: 7px;
 }
 .gift-code .form-add-gif-tcode {
@@ -2447,7 +2453,7 @@ form.form-general {
   height: 38px;
 }
 .gift-code .form-add-gif-tcode button {
-  background: #0088cc;
+  background: #fb6800;
   border: none;
   border-radius: 0 4px 4px 0;
   height: 38px;
@@ -2490,7 +2496,7 @@ form.form-general {
 }
 .box-thank .box-text-thank .icon-thank i {
   font-size: 100px;
-  color: #0088cc;
+  color: #fb6800;
 }
 .box-thank .box-text-thankp {
   margin: 0;
@@ -2523,9 +2529,9 @@ form.form-general {
   text-decoration: none;
 }
 .box-thank .box-bt-dk .bt-tt-mua {
-  border: 1px solid #0088cc;
+  border: 1px solid #fb6800;
   border-radius: 10px;
-  background-color: #0088cc;
+  background-color: #fb6800;
   width: 243px;
   height: 45px;
   font-size: 15px;
@@ -2536,7 +2542,7 @@ form.form-general {
   line-height: 45px;
 }
 .box-thank .box-bt-dk .bt-dk {
-  border: 1px solid #0088cc;
+  border: 1px solid #fb6800;
   border-radius: 10px;
   background-color: white;
   width: 243px;
@@ -2667,7 +2673,7 @@ form.form-general {
 }
 .chitiet-dh-steps> li.is-complete:before, .chitiet-dh-steps> li.is-complete:after {
   color: #FFF;
-  background: #0088cc;
+  background: #fb6800;
 }
 .chitiet-dh-steps> li:after {
   content: '';
@@ -2682,17 +2688,17 @@ form.form-general {
 }
 .chitiet-dh-steps> li.is-complete:before, .chitiet-dh-steps> li.is-complete:after {
   color: #FFF;
-  background: #0088cc;
+  background: #fb6800;
 }
 .chitiet-dh-steps> li.is-complete:before {
   color: #FFF;
-  background: #0088cc url(../images/icon-check.svg) no-repeat;
+  background: #fb6800 url(../images/icon-check.svg) no-repeat;
   background-size: 65% auto;
   background-position: 5px 5px;
 }
 .chitiet-dh-steps> li.is-cong:before {
   color: #FFF;
-  background: #0088cc url(../images/cong.svg) no-repeat;
+  background: #fb6800 url(../images/cong.svg) no-repeat;
   background-size: 65% auto;
   background-position: 5px 5px;
 }
@@ -2889,7 +2895,7 @@ p + .form {
 }
 .wysiwyg-news h1 {
   font-size: 20px;
-  color: #0088cc;
+  color: #fb6800;
 }
 
 /* News */
@@ -2943,11 +2949,11 @@ p + .form {
 .block-article-list .article-list-news .article-news-item .article-news-item-description a {
   font-size: 16px;
   font-weight: bold;
-  color: #0088cc;
+  color: #fb6800;
 }
 .nd-time {
   text-align: left;
-  color: #0088cc;
+  color: #fb6800;
   margin: 7px 0 5px 0;
 }
 .block-article-list .article-list-news .article-news-item .article-news-item-description p {
