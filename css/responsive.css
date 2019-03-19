@@ -568,7 +568,7 @@
 */
 @media (max-width: 414px) {
 	.products-cate .product-item {
-	  width: 50% !important;
+	  width: 33.3% !important;
 	}
 	.products-cate .product {
 	  min-height: auto;
